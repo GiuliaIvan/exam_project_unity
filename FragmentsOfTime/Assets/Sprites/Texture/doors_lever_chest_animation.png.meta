@@ -1,109 +1,52 @@
 fileFormatVersion: 2
-guid: 9112107e4d4472f419f1abe7681b0164
+guid: 96eede17760567f43b7840cc7f524703
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4035959289877228764
-    second: Walk_0
+      213: -6667639472425199973
+    second: doors_lever_chest_animation_0
   - first:
-      213: -982904232830982447
-    second: Walk_1
+      213: -2350934369649428687
+    second: doors_lever_chest_animation_1
   - first:
-      213: -350908408369970039
-    second: Walk_2
+      213: 221485174163195084
+    second: doors_lever_chest_animation_2
   - first:
-      213: -5409570386352685021
-    second: Walk_3
+      213: -8105139302663682802
+    second: doors_lever_chest_animation_3
   - first:
-      213: 1553940418269799609
-    second: Walk_4
+      213: -9152817268265574178
+    second: doors_lever_chest_animation_4
   - first:
-      213: 2416434504916517810
-    second: Walk_5
+      213: 342969731396908109
+    second: doors_lever_chest_animation_5
   - first:
-      213: -6428935122508569504
-    second: Walk_6
+      213: -8343260098957696759
+    second: doors_lever_chest_animation_6
   - first:
-      213: 7144598999076838305
-    second: Walk_7
+      213: 5208121298799929476
+    second: doors_lever_chest_animation_7
   - first:
-      213: 7500509103958437945
-    second: Walk_8
+      213: 7057604039919739976
+    second: doors_lever_chest_animation_8
   - first:
-      213: 1008816216748069464
-    second: Walk_9
+      213: 8701856031983881137
+    second: doors_lever_chest_animation_9
   - first:
-      213: 11406907883527339
-    second: Walk_10
+      213: 1805988008740542802
+    second: doors_lever_chest_animation_10
   - first:
-      213: 8030128826893041618
-    second: Walk_11
+      213: 3915654495299526298
+    second: doors_lever_chest_animation_11
   - first:
-      213: 2315132830120601726
-    second: Walk_12
+      213: 2089849091792574203
+    second: doors_lever_chest_animation_12
   - first:
-      213: 7929438602540414932
-    second: Walk_13
+      213: 3016148902443477174
+    second: doors_lever_chest_animation_13
   - first:
-      213: 5250438378151091228
-    second: Walk_14
-  - first:
-      213: -1258472680374559522
-    second: Walk_15
-  - first:
-      213: 2155107402851330559
-    second: Walk_16
-  - first:
-      213: 7720552135500433751
-    second: Walk_17
-  - first:
-      213: -8953822836050947745
-    second: Walk_18
-  - first:
-      213: -6148190078763333420
-    second: Walk_19
-  - first:
-      213: -404497435793420480
-    second: Walk_20
-  - first:
-      213: 8198118753440594053
-    second: Walk_21
-  - first:
-      213: -7385022159944432617
-    second: Walk_22
-  - first:
-      213: 5662401404901316715
-    second: Walk_23
-  - first:
-      213: 2248310813953410568
-    second: Walk_24
-  - first:
-      213: -5250590731418792489
-    second: Walk_25
-  - first:
-      213: 7507361727851546712
-    second: Walk_26
-  - first:
-      213: 3754832148748575705
-    second: Walk_27
-  - first:
-      213: 7015882756945246565
-    second: Walk_28
-  - first:
-      213: -4001931175307991436
-    second: Walk_29
-  - first:
-      213: -3097320160809446444
-    second: Walk_30
-  - first:
-      213: 1304144291829279589
-    second: Walk_31
-  - first:
-      213: 937637902835717785
-    second: Walk_32
-  - first:
-      213: 6614135236904034709
-    second: Walk_33
+      213: 8651537759417161824
+    second: doors_lever_chest_animation_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -212,353 +155,331 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_Front_0
+      name: doors_lever_chest_animation_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
+        y: 191
+        width: 129
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9619bbf939c773a0800000000000000
+      internalID: -6667639472425199973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_lever_chest_animation_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 223
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137f9c685adcf5fd0800000000000000
+      internalID: -2350934369649428687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_lever_chest_animation_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 201
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc44309a79fd21300800000000000000
+      internalID: 221485174163195084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_lever_chest_animation_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 129
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e058ca14fb2c48f80800000000000000
+      internalID: -8105139302663682802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_lever_chest_animation_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 178
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed028fe2039aaf080800000000000000
+      internalID: -9152817268265574178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_lever_chest_animation_5
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 153
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44bf90572972c400800000000000000
+      internalID: 342969731396908109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_lever_chest_animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 95
-        width: 17
-        height: 29
+        width: 129
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdce119379b920830800000000000000
-      internalID: 4035959289877228764
+      spriteID: 901afecf429c63c80800000000000000
+      internalID: -8343260098957696759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front_1
+      name: doors_lever_chest_animation_7
       rect:
         serializedVersion: 2
-        x: 40
-        y: 95
-        width: 17
-        height: 30
+        x: 134
+        y: 133
+        width: 21
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d6a1e1dec50c52f0800000000000000
-      internalID: -982904232830982447
+      spriteID: 488ad1a3ab6f64840800000000000000
+      internalID: 5208121298799929476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front_2
+      name: doors_lever_chest_animation_8
       rect:
         serializedVersion: 2
-        x: 72
-        y: 95
-        width: 17
-        height: 29
+        x: 134
+        y: 105
+        width: 21
+        height: 22
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 984096a69a2512bf0800000000000000
-      internalID: -350908408369970039
+      spriteID: 84427c44b75a1f160800000000000000
+      internalID: 7057604039919739976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front_3
+      name: doors_lever_chest_animation_9
       rect:
         serializedVersion: 2
-        x: 104
-        y: 95
-        width: 17
-        height: 30
+        x: 0
+        y: 47
+        width: 129
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 320c9fd05685de4b0800000000000000
-      internalID: -5409570386352685021
+      spriteID: 1bb4df8e4f333c870800000000000000
+      internalID: 8701856031983881137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back_0
+      name: doors_lever_chest_animation_10
       rect:
         serializedVersion: 2
-        x: 8
-        y: 63
-        width: 17
-        height: 29
+        x: 134
+        y: 86
+        width: 21
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8521ce21109000e00800000000000000
-      internalID: 1008816216748069464
+      spriteID: 25958918688201910800000000000000
+      internalID: 1805988008740542802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back_1
+      name: doors_lever_chest_animation_11
       rect:
         serializedVersion: 2
-        x: 40
-        y: 63
-        width: 17
-        height: 30
+        x: 134
+        y: 57
+        width: 21
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bac1264b586882000800000000000000
-      internalID: 11406907883527339
+      spriteID: a9e5d777403375630800000000000000
+      internalID: 3915654495299526298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back_2
+      name: doors_lever_chest_animation_12
       rect:
         serializedVersion: 2
-        x: 72
-        y: 63
-        width: 17
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2df75936f9fb07f60800000000000000
-      internalID: 8030128826893041618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Back_3
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 63
-        width: 17
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e78ee2bfa01012020800000000000000
-      internalID: 2315132830120601726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Right_0
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 31
-        width: 17
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75903621349e42b60800000000000000
-      internalID: 7720552135500433751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Right_1
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 31
-        width: 17
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f51176be191adb380800000000000000
-      internalID: -8953822836050947745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Right_2
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 31
-        width: 17
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d80bb7a2bd3daaa0800000000000000
-      internalID: -6148190078763333420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Right_3
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 31
-        width: 17
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04f0afaa9bfe26af0800000000000000
-      internalID: -404497435793420480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Left_0
-      rect:
-        serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 17
-        height: 28
+        width: 129
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85844fc37b18f2860800000000000000
-      internalID: 7507361727851546712
+      spriteID: bf6187e2da2a00d10800000000000000
+      internalID: 2089849091792574203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left_1
+      name: doors_lever_chest_animation_13
       rect:
         serializedVersion: 2
-        x: 41
-        y: 0
-        width: 17
-        height: 29
+        x: 134
+        y: 38
+        width: 21
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d3206102f7db1430800000000000000
-      internalID: 3754832148748575705
+      spriteID: 6b8e3df42738bd920800000000000000
+      internalID: 3016148902443477174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left_2
+      name: doors_lever_chest_animation_14
       rect:
         serializedVersion: 2
-        x: 73
-        y: 0
-        width: 17
-        height: 28
+        x: 134
+        y: 9
+        width: 21
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5697289123c6d5160800000000000000
-      internalID: 7015882756945246565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Left_3
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 0
-        width: 17
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 476a4389cc84678c0800000000000000
-      internalID: -4001931175307991436
+      spriteID: 06850fe11cf601870800000000000000
+      internalID: 8651537759417161824
       vertices: []
       indices: 
       edges: []
@@ -567,7 +488,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1f4cbbec265991242ada104f54ca3511
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -576,42 +497,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Walk_13: 7929438602540414932
-      Walk_14: 5250438378151091228
-      Walk_15: -1258472680374559522
-      Walk_16: 2155107402851330559
-      Walk_21: 8198118753440594053
-      Walk_22: -7385022159944432617
-      Walk_23: 5662401404901316715
-      Walk_24: 2248310813953410568
-      Walk_25: -5250590731418792489
-      Walk_30: -3097320160809446444
-      Walk_31: 1304144291829279589
-      Walk_32: 937637902835717785
-      Walk_33: 6614135236904034709
-      Walk_34: -1997985490
-      Walk_4: 1553940418269799609
-      Walk_5: 2416434504916517810
-      Walk_6: -6428935122508569504
-      Walk_7: 7144598999076838305
-      Walk_8: 7500509103958437945
-      Walk_Back_0: 1008816216748069464
-      Walk_Back_1: 11406907883527339
-      Walk_Back_2: 8030128826893041618
-      Walk_Back_3: 2315132830120601726
-      Walk_Front_0: 4035959289877228764
-      Walk_Front_1: -982904232830982447
-      Walk_Front_2: -350908408369970039
-      Walk_Front_3: -5409570386352685021
-      Walk_Left_0: 7507361727851546712
-      Walk_Left_1: 3754832148748575705
-      Walk_Left_2: 7015882756945246565
-      Walk_Left_3: -4001931175307991436
-      Walk_Right_0: 7720552135500433751
-      Walk_Right_1: -8953822836050947745
-      Walk_Right_2: -6148190078763333420
-      Walk_Right_3: -404497435793420480
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
