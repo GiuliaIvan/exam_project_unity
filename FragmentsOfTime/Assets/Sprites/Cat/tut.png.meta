@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kitty_1_0: -5170310281822927668
+      kitty_1_1: 2602510930565533808
+      kitty_1_10: 8317604995229878749
+      kitty_1_11: 9089452010521477763
+      kitty_1_12: 8098235013370461241
+      kitty_1_13: 2653697334326338081
+      kitty_1_14: 3023069291452416344
+      kitty_1_15: -3992371100055842976
+      kitty_1_2: -314259615189960896
+      kitty_1_3: 6358773399661591098
+      kitty_1_4: -3844043761110193719
+      kitty_1_5: -4704546190757666331
+      kitty_1_6: 4464697702930472103
+      kitty_1_7: 3567482854489760841
+      kitty_1_8: 5049794254974933287
+      kitty_1_9: 5531123523647365810
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
