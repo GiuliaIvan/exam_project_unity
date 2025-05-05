@@ -161,7 +161,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image-removebg-preview (4)_0
+      name: pen
       rect:
         serializedVersion: 2
         x: 54
@@ -169,7 +169,7 @@ TextureImporter:
         width: 29
         height: 109
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -183,7 +183,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_1
+      name: hourglass
       rect:
         serializedVersion: 2
         x: 156
@@ -191,7 +191,7 @@ TextureImporter:
         width: 58
         height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -205,7 +205,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_2
+      name: potion
       rect:
         serializedVersion: 2
         x: 271
@@ -213,7 +213,7 @@ TextureImporter:
         width: 74
         height: 109
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -227,7 +227,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_3
+      name: ring
       rect:
         serializedVersion: 2
         x: 379
@@ -235,7 +235,7 @@ TextureImporter:
         width: 81
         height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_4
+      name: goldball
       rect:
         serializedVersion: 2
         x: 27
@@ -257,7 +257,7 @@ TextureImporter:
         width: 87
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,7 +271,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_5
+      name: artefact
       rect:
         serializedVersion: 2
         x: 153
@@ -279,7 +279,7 @@ TextureImporter:
         width: 63
         height: 114
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -293,15 +293,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_6
+      name: skeleton-skull
       rect:
         serializedVersion: 2
         x: 265
-        y: 266
+        y: 256
         width: 68
-        height: 81
+        height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -315,29 +315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_7
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 254
-        width: 49
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39e45ebfc09cd8e00800000000000000
-      internalID: 1048715345850093203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: image-removebg-preview (4)_8
+      name: book
       rect:
         serializedVersion: 2
         x: 379
@@ -345,7 +323,7 @@ TextureImporter:
         width: 75
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -359,7 +337,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_9
+      name: crown
       rect:
         serializedVersion: 2
         x: 27
@@ -367,7 +345,7 @@ TextureImporter:
         width: 84
         height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -381,7 +359,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_10
+      name: jewl
       rect:
         serializedVersion: 2
         x: 150
@@ -389,7 +367,7 @@ TextureImporter:
         width: 69
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -403,7 +381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_11
+      name: chest
       rect:
         serializedVersion: 2
         x: 255
@@ -411,7 +389,7 @@ TextureImporter:
         width: 91
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -425,7 +403,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_12
+      name: torch
       rect:
         serializedVersion: 2
         x: 394
@@ -433,7 +411,7 @@ TextureImporter:
         width: 38
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -447,7 +425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_13
+      name: axe
       rect:
         serializedVersion: 2
         x: 49
@@ -455,7 +433,7 @@ TextureImporter:
         width: 37
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -469,7 +447,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_14
+      name: arrowgold
       rect:
         serializedVersion: 2
         x: 166
@@ -477,7 +455,7 @@ TextureImporter:
         width: 37
         height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -491,7 +469,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_15
+      name: pocket-watch
       rect:
         serializedVersion: 2
         x: 261
@@ -499,7 +477,7 @@ TextureImporter:
         width: 84
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -513,7 +491,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image-removebg-preview (4)_16
+      name: horseshoe
       rect:
         serializedVersion: 2
         x: 391
@@ -521,7 +499,7 @@ TextureImporter:
         width: 65
         height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -538,7 +516,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 498209726d0e42646bbab6e853c92cf6
     internalID: 0
     vertices: []
     indices: 
@@ -548,23 +526,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image-removebg-preview (4)_0: 768539965427458729
-      image-removebg-preview (4)_1: 8540916072121935540
-      image-removebg-preview (4)_10: -5405656853563286727
-      image-removebg-preview (4)_11: -8543165789545988279
-      image-removebg-preview (4)_12: 4773073165080376728
-      image-removebg-preview (4)_13: 8256749177466061967
-      image-removebg-preview (4)_14: -4059656727647122528
-      image-removebg-preview (4)_15: -3258467178856016771
-      image-removebg-preview (4)_16: 803535454543282376
-      image-removebg-preview (4)_2: 4243274102209351498
-      image-removebg-preview (4)_3: 8023392875457523828
-      image-removebg-preview (4)_4: -5103887132308531822
-      image-removebg-preview (4)_5: -324631261464543303
-      image-removebg-preview (4)_6: 7492309070285162300
+      arrowgold: -4059656727647122528
+      artefact: -324631261464543303
+      axe: 8256749177466061967
+      book: 2024540308447028077
+      chest: -8543165789545988279
+      crown: 8017619990235626586
+      goldball: -5103887132308531822
+      horseshoe: 803535454543282376
+      hourglass: 8540916072121935540
       image-removebg-preview (4)_7: 1048715345850093203
-      image-removebg-preview (4)_8: 2024540308447028077
-      image-removebg-preview (4)_9: 8017619990235626586
+      jewl: -5405656853563286727
+      pen: 768539965427458729
+      pocket-watch: -3258467178856016771
+      potion: 4243274102209351498
+      ring: 8023392875457523828
+      skeleton-skull: 7492309070285162300
+      torch: 4773073165080376728
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
