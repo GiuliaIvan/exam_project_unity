@@ -148,7 +148,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< Updated upstream:FragmentsOfTime/Assets/Sprites/Collectables/puzzel.png.meta
       Screenshot_2025-05-01_122918-removebg-preview_0: 1345787101841808305
+=======
+      Screenshot 2025-05-01 122918_0: -2544570424139221144
+>>>>>>> Stashed changes:FragmentsOfTime/Assets/Sprites/Collectables/Screenshot 2025-05-01 122918.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
