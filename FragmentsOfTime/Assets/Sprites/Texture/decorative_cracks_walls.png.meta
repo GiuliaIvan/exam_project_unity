@@ -1,85 +1,28 @@
 fileFormatVersion: 2
-guid: a5777c1a85e218e4795081ad12d16ab3
+guid: 436ddb223990a814ca44719fd9e0a052
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4723107735738678597
-    second: Idle_0
+      213: -7269668576496765691
+    second: decorative_cracks_walls_0
   - first:
-      213: -7385789195546760866
-    second: Idle_1
+      213: -6799852962439934899
+    second: decorative_cracks_walls_1
   - first:
-      213: 3234629978573100161
-    second: Idle_2
+      213: -4454747756833537264
+    second: decorative_cracks_walls_2
   - first:
-      213: 6373048116405451881
-    second: Idle_3
+      213: 3078729324998488032
+    second: decorative_cracks_walls_3
   - first:
-      213: 7264182050183361747
-    second: Idle_4
+      213: -2393479837115753245
+    second: decorative_cracks_walls_4
   - first:
-      213: -2834552850196481573
-    second: Idle_5
+      213: -5166554519593993859
+    second: decorative_cracks_walls_5
   - first:
-      213: 3278449094680734212
-    second: Idle_6
-  - first:
-      213: 3384493420599841878
-    second: Idle_7
-  - first:
-      213: -2331352242086191015
-    second: Idle_8
-  - first:
-      213: -3914248031228685145
-    second: Idle_9
-  - first:
-      213: 7132915409514813599
-    second: Idle_10
-  - first:
-      213: -2055793278435719954
-    second: Idle_11
-  - first:
-      213: -1133706752296058015
-    second: Idle_12
-  - first:
-      213: -7873313509577613512
-    second: Idle_13
-  - first:
-      213: 719741960001666856
-    second: Idle_14
-  - first:
-      213: -2017107389029466533
-    second: Idle_15
-  - first:
-      213: -7851968663669621680
-    second: Idle_16
-  - first:
-      213: -216799431487514718
-    second: Idle_17
-  - first:
-      213: 3610992343889596186
-    second: Idle_18
-  - first:
-      213: 6538181465538999060
-    second: Idle_19
-  - first:
-      213: 6239617922696411994
-    second: Idle_20
-  - first:
-      213: 3604202040009161566
-    second: Idle_21
-  - first:
-      213: 7714808819881066536
-    second: Idle_22
-  - first:
-      213: 4839914909742284145
-    second: Idle_23
-  - first:
-      213: 5540120679197756244
-    second: Idle_24
-  - first:
-      213: 3244912566212535839
-    second: Idle_25
+      213: -1420034055698121715
+    second: decorative_cracks_walls_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -188,177 +131,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_Front_0
+      name: decorative_cracks_walls_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 95
-        width: 17
-        height: 29
+        x: 0
+        y: 335
+        width: 128
+        height: 177
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54d7a982679db8140800000000000000
-      internalID: 4723107735738678597
+      spriteID: 505371f22f2fc1b90800000000000000
+      internalID: -7269668576496765691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_Front_1
+      name: decorative_cracks_walls_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 95
-        width: 17
-        height: 30
+        x: 1
+        y: 287
+        width: 31
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e596485bbd7608990800000000000000
-      internalID: -7385789195546760866
+      spriteID: d4c41e002c112a1a0800000000000000
+      internalID: -6799852962439934899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_Back_0
+      name: decorative_cracks_walls_2
       rect:
         serializedVersion: 2
-        x: 8
-        y: 63
-        width: 17
-        height: 29
+        x: 33
+        y: 287
+        width: 31
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 654108f85d228fe20800000000000000
-      internalID: 3384493420599841878
+      spriteID: 01308f5748e8d22c0800000000000000
+      internalID: -4454747756833537264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_Back_1
+      name: decorative_cracks_walls_3
       rect:
         serializedVersion: 2
-        x: 40
-        y: 63
-        width: 17
-        height: 30
+        x: 73
+        y: 292
+        width: 8
+        height: 42
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9506424ec7f55afd0800000000000000
-      internalID: -2331352242086191015
+      spriteID: 0efec106208d9ba20800000000000000
+      internalID: 3078729324998488032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_Right_0
+      name: decorative_cracks_walls_4
       rect:
         serializedVersion: 2
-        x: 7
-        y: 31
-        width: 17
-        height: 29
+        x: 89
+        y: 292
+        width: 15
+        height: 42
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83f9750e31f5cb290800000000000000
-      internalID: -7873313509577613512
+      spriteID: 3ecd7a3f4c6a8ced0800000000000000
+      internalID: -2393479837115753245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_Right_1
+      name: decorative_cracks_walls_5
       rect:
         serializedVersion: 2
-        x: 39
-        y: 31
-        width: 17
-        height: 30
+        x: 111
+        y: 292
+        width: 9
+        height: 42
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 82fb7dfcf790df900800000000000000
-      internalID: 719741960001666856
+      spriteID: d7939eab906bc48b0800000000000000
+      internalID: -5166554519593993859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_Left_0
+      name: decorative_cracks_walls_6
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 17
-        height: 28
+        width: 128
+        height: 289
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5bfa781173979650800000000000000
-      internalID: 6239617922696411994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Left_1
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 0
-        width: 17
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e5bfb75d8a2b40230800000000000000
-      internalID: 3604202040009161566
+      spriteID: d0cf72dcc860b4ce0800000000000000
+      internalID: -1420034055698121715
       vertices: []
       indices: 
       edges: []
@@ -367,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a3f795d9975de034c934df0df88a20b0
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -376,33 +297,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Idle_10: 7132915409514813599
-      Idle_11: -2055793278435719954
-      Idle_12: -1133706752296058015
-      Idle_15: -2017107389029466533
-      Idle_16: -7851968663669621680
-      Idle_17: -216799431487514718
-      Idle_18: 3610992343889596186
-      Idle_19: 6538181465538999060
-      Idle_2: 3234629978573100161
-      Idle_22: 7714808819881066536
-      Idle_23: 4839914909742284145
-      Idle_24: 5540120679197756244
-      Idle_25: 3244912566212535839
-      Idle_3: 6373048116405451881
-      Idle_4: 7264182050183361747
-      Idle_5: -2834552850196481573
-      Idle_6: 3278449094680734212
-      Idle_9: -3914248031228685145
-      Idle_Back_0: 3384493420599841878
-      Idle_Back_1: -2331352242086191015
-      Idle_Front_0: 4723107735738678597
-      Idle_Front_1: -7385789195546760866
-      Idle_Left_0: 6239617922696411994
-      Idle_Left_1: 3604202040009161566
-      Idle_Right_0: -7873313509577613512
-      Idle_Right_1: 719741960001666856
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
