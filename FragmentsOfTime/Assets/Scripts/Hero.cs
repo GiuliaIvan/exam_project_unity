@@ -1,57 +1,53 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Hero : MonoBehaviour
 {
-    public float moveSpeed = 2f;
+    public float moveSpeed;
     public Rigidbody2D rb;
-    private Animator animator;
-
-    private Vector2 movement;
-
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+    private Vector2 moveDirection;
+    private Vector2 lastMoveDirection;
+    public Animator animator;
 
     void Update()
     {
-        // Reset movement vector
-        movement = Vector2.zero;
-
-        // Get input
-        if (Input.GetKey(KeyCode.W))
-        {
-            movement.y += 1;
-            animator.SetInteger("WalkDirection", 2); // Up
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            movement.y -= 1;
-            animator.SetInteger("WalkDirection", 0); // Down
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            movement.x -= 1;
-            animator.SetInteger("WalkDirection", 1); // Left
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            movement.x += 1;
-            animator.SetInteger("WalkDirection", 3); // Right
-        }
-
-        // Normalize to avoid diagonal speed boost
-        movement = movement.normalized;
-
-        // Set isMoving in animator
-        bool isMoving = movement != Vector2.zero;
-        animator.SetBool("isMoving", isMoving);
+        //processing inputs
+        ProcessInputs();
+        Animate();
     }
 
     void FixedUpdate() // runs at fixed intervals (by default every 0.02 seconds, or 50 times per second), regardless of your frame rate
     {
         // Apply movement
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        Move();
+    }
+
+    void ProcessInputs()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        if((moveX == 0 && moveY == 0 ) && moveDirection.x != 0 || moveDirection.y !=0)
+        {
+            lastMoveDirection = moveDirection;
+        }
+
+        moveDirection = new Vector2(moveX, moveY).normalized;
+    }
+
+    void Move()
+    {
+        rb.linearVelocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+    }
+
+    void Animate()
+    {
+        animator.SetFloat("AnimMoveX", moveDirection.x);
+        animator.SetFloat("AnimMoveY", moveDirection.y);
+        animator.SetFloat("AnimMoveMagnitude", moveDirection.magnitude);
+        animator.SetFloat("AnimLastMoveX", lastMoveDirection.x);
+        animator.SetFloat("AnimLastMoveY", lastMoveDirection.y);
     }
 }
