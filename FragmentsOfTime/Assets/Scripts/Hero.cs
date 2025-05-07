@@ -18,7 +18,7 @@ public class Hero : MonoBehaviour
         // Reset movement vector
         movement = Vector2.zero;
 
-        // Get input (WASD)
+        // Get input
         if (Input.GetKey(KeyCode.W))
         {
             movement.y += 1;
@@ -49,7 +49,7 @@ public class Hero : MonoBehaviour
         animator.SetBool("isMoving", isMoving);
     }
 
-    void FixedUpdate()
+    void FixedUpdate() // runs at fixed intervals (by default every 0.02 seconds, or 50 times per second), regardless of your frame rate
     {
         // Apply movement
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
