@@ -214,10 +214,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Floor_0: 199249360466117110
-      Floor_1: 759651534
-      Floor_2: -140968013
-      Floor_3: -669076878
+      decorative_cracks_floor_0: 660762062107766472
+      decorative_cracks_floor_1: 1541504902701184594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
