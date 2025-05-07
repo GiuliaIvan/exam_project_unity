@@ -302,14 +302,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DoubleDoor_0: -4737267657518226015
-      DoubleDoor_1: -1990112226
-      DoubleDoor_2: -464017121
-      DoubleDoor_3: 32105823
-      DoubleDoor_4: 1784302455
-      DoubleDoor_5: -68354722
-      DoubleDoor_6: 1009009065
-      DoubleDoor_7: 1414027135
+      decorative_cracks_walls_0: -7269668576496765691
+      decorative_cracks_walls_1: -6799852962439934899
+      decorative_cracks_walls_2: -4454747756833537264
+      decorative_cracks_walls_3: 3078729324998488032
+      decorative_cracks_walls_4: -2393479837115753245
+      decorative_cracks_walls_5: -5166554519593993859
+      decorative_cracks_walls_6: -1420034055698121715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
