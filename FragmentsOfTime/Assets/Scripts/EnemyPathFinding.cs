@@ -5,9 +5,11 @@ using UnityEngine;
 public class EnemyPathFinding : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 2f;  //Controls how fast the enemy moves
+    [SerializeField] private SpriteRenderer spriteRenderer; // Assign in Inspector
 
     private Rigidbody2D rb;  // rb = Unity's 2D physics component
     private Vector2 moveDir;   //Direction the enemy wants to go
+    public Vector2 CurrentDirection => moveDir;
 
     private void Awake()
     {
@@ -28,5 +30,11 @@ public class EnemyPathFinding : MonoBehaviour
     {
         //  This is called by the first script to tell the enemy where to move
         moveDir = targetPosition;
+
+        // Face direction
+        if (moveDir.x != 0)
+        {
+            spriteRenderer.flipX = moveDir.x < 0;
+        }
     }
 }
