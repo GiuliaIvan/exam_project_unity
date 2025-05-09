@@ -1799,6 +1799,83 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1723545854
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 920825338531488043, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141805668384035963, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_Name
+      value: Skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212611162977851945, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 2139835280}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7290584
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7290584
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7290584
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
 --- !u!1 &1890877996 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3081328642596549398, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
@@ -1845,6 +1922,11 @@ MonoBehaviour:
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: -7572218495829799200, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
   m_PrefabInstance: {fileID: 4536754400878288359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &2139835280 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4285372090785369355, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+  m_PrefabInstance: {fileID: 1723545854}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &949697621761082039
 PrefabInstance:
@@ -2388,3 +2470,4 @@ SceneRoots:
   - {fileID: 4522126034898900329}
   - {fileID: 9040706316700695611}
   - {fileID: 7310672092381989147}
+  - {fileID: 1723545854}
