@@ -13,13 +13,15 @@ public class Hero : MonoBehaviour
     public Animator animator;
 
     [Header("Health")]
-    public int maxLives = 3;
+    public int maxLives = 5;
     private int currentLives;
     private bool isDead = false;
 
     [Header("Combat")]
     public float shootCooldown = 0.5f;
     private bool canShoot = true;
+    private bool isShooting = false;
+    public GameObject arrowPrefab;
 
     // [Header("Game Over")]
     // public GameObject gameOverScreen; // Assign in inspector
@@ -69,10 +71,16 @@ public class Hero : MonoBehaviour
 
     void Move()
     {
+        if (isShooting) 
+        {
+            rb.linearVelocity = Vector2.zero; // Force stop if shooting
+            return;
+        }
+
         rb.linearVelocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
     }
 
-      public void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         if (isDead) return;
         
@@ -110,25 +118,40 @@ public class Hero : MonoBehaviour
         // GameManager.Instance.PlayerDied();
     }
 
-        void Shoot()
-        {
-            canShoot = false;
-            animator.SetTrigger("Shoot");
-            Invoke(nameof(ResetShoot), shootCooldown);
-        }
+    void Shoot()
+    {
+        if (!canShoot || isShooting) return;
 
-        void ResetShoot()
-        {
-            canShoot = true;
-        }
+        isShooting = true;
+        canShoot = false;
+        animator.SetTrigger("Shoot");
+
+        // Immediately stop movement
+        rb.linearVelocity = Vector2.zero;
+
+        GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
+        arrow.GetComponent<Arrow>().SetDirection(lastMoveDirection);
+    }
+
+    public void ResetShoot()
+    {
+        isShooting = false;
+        canShoot = true;
+    }
 
     void Animate()
     {
         animator.SetFloat("AnimMoveX", moveDirection.x);
         animator.SetFloat("AnimMoveY", moveDirection.y);
         animator.SetFloat("AnimMoveMagnitude", moveDirection.magnitude);
-        animator.SetFloat("AnimLastMoveX", lastMoveDirection.x);
-        animator.SetFloat("AnimLastMoveY", lastMoveDirection.y);
+
+        if (moveDirection.x != 0 || moveDirection.y != 0)
+        {
+            lastMoveDirection = moveDirection;
+            animator.SetFloat("AnimLastMoveX", lastMoveDirection.x);
+            animator.SetFloat("AnimLastMoveY", lastMoveDirection.y);
+        }
+
     }
 
 }
