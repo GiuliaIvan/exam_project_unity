@@ -12,8 +12,15 @@ public class EnemyAI : MonoBehaviour
     }
 
     private State state;
-    private EnemyPathFinding enemyPathFinding;
 
+    [SerializeField] private Transform[] patrolPoints; // Set these in Unity to define where the enemy patrols
+    [SerializeField] private float waitTime = 1.5f;
+
+    private int currentPointIndex = 0;
+    private EnemyPathFinding enemyPathFinding;
+    private bool isWaiting = false;
+
+    // Create a "box" or area where the enemy is allowed to move
     [SerializeField] private Vector2 roamAreaMin = new Vector2(-5f, -5f);
     [SerializeField] private Vector2 roamAreaMax = new Vector2(5f, 5f);
 
@@ -24,13 +31,13 @@ public class EnemyAI : MonoBehaviour
         // It finds the EnemyPathFinding script attached to the enemy.
         // It sets the enemy's mode to Roaming.
         enemyPathFinding = GetComponent<EnemyPathFinding>();
-        state = State.Roaming;
+        // state = State.Roaming;
     }
 
     private void Start()
     {
         // When the game starts, it launches a Coroutine that runs the RoamingRoutine over time
-        StartCoroutine(RoamingRoutine());
+        StartCoroutine(PatrolRoutine());
     }
 
     private IEnumerator RoamingRoutine()
@@ -47,11 +54,32 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    // Picks a random direction on the X and Y axes
+    private IEnumerator PatrolRoutine()
+    {
+        while (true)
+        {
+            Vector2 target = patrolPoints[currentPointIndex].position;
+            enemyPathFinding.MoveTo((target - (Vector2)transform.position).normalized);
+
+            // Wait until enemy is close to the point
+            while (Vector2.Distance(transform.position, target) > 0.2f)
+            {
+                yield return null;
+            }
+
+            // Stop movement and wait
+            enemyPathFinding.MoveTo(Vector2.zero);
+            yield return new WaitForSeconds(waitTime);
+
+            // Go to the next point
+            currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
+        }
+    }
+
+    // Picks a random direction within the allowed zone on the X and Y axes
     private Vector2 GetRoamingPosition()
     {
         // return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
-        // .normalized makes sure the direction isn’t too big — it just gives a consistent direction to move
 
         float x = Random.Range(roamAreaMin.x, roamAreaMax.x);
         float y = Random.Range(roamAreaMin.y, roamAreaMax.y);
@@ -59,5 +87,6 @@ public class EnemyAI : MonoBehaviour
 
         // Direction from enemy to target
         return (targetPosition - (Vector2)transform.position).normalized;
+        // .normalized makes sure the direction isn’t too big — it just gives a consistent direction to move
     }
 }
