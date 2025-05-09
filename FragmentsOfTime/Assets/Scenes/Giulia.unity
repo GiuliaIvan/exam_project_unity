@@ -217,6 +217,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 872875391}
     - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.26
       objectReference: {fileID: 0}
@@ -816,6 +828,9 @@ MonoBehaviour:
   moveSpeed: 3
   rb: {fileID: 713640429}
   animator: {fileID: 713640430}
+  maxLives: 5
+  shootCooldown: 0.5
+  arrowPrefab: {fileID: 0}
 --- !u!4 &713640434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4179869549769258743, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
