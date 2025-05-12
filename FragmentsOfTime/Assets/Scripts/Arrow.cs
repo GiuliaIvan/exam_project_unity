@@ -28,4 +28,12 @@ public class Arrow : MonoBehaviour
         // Move arrow
         rb.linearVelocity = direction.normalized * speed;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") || other.CompareTag("Trap"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

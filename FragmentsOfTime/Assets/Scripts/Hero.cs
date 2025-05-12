@@ -38,12 +38,6 @@ public class Hero : MonoBehaviour
         ProcessInputs();
         Animate();
 
-        // Test death trigger (remove this in final game)
-        if (Input.GetKeyDown(KeyCode.K)) 
-        {
-            TakeDamage(1);
-        }
-
         if (Input.GetKeyDown(KeyCode.Space) && canShoot)
         {
             Shoot();
@@ -90,7 +84,6 @@ public class Hero : MonoBehaviour
         // Simple red flash (one frame)
         GetComponent<SpriteRenderer>().color = Color.red;
         Invoke("ResetColor", 0.2f); // Resets after 0.1 seconds
-
         
         if (currentLives <= 0)
         {
@@ -153,5 +146,16 @@ public class Hero : MonoBehaviour
         }
 
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(1);
+            
+            //pushback (no physics force)
+            float pushDistance = 0.5f;
+            Vector2 pushDirection = (transform.position - collision.transform.position).normalized;
+            transform.position += (Vector3)(pushDirection * pushDistance);
+        }
+    }
 }
