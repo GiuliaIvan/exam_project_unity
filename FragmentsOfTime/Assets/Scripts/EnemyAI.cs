@@ -20,7 +20,7 @@ public class EnemyAI : MonoBehaviour
     private int currentPointIndex = 0;
 
     [Header("Combat")]
-    [SerializeField] private float chaseRange = 4f;
+    [SerializeField] private float chaseRange = 2f;
     [SerializeField] private float attackRange = 0.8f;
     [SerializeField] private float attackCooldown = 1f;
     [SerializeField] private int damageAmount = 1;
