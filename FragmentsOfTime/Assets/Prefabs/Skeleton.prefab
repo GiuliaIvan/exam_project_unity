@@ -169,13 +169,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints: []
-  waitTime: 1.5
-  chaseRange: 4
   player: {fileID: 0}
-  roamAreaMin: {x: -5, y: -5}
-  roamAreaMax: {x: 5, y: 5}
+  chaseRange: 4
   attackCooldown: 1
   damageAmount: 1
+  waitTime: 1.5
 --- !u!114 &2212611162977851945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e2fc9654cb2094ca446d32a3365a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 1.5
   spriteRenderer: {fileID: 0}
 --- !u!95 &-463180704775408820
 Animator:
