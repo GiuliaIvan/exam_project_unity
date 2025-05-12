@@ -86,7 +86,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.3333334, y: 1.3333334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -168,8 +168,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2ea780235519c4995a733b6df1c45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patrolPoints: []
+  waitTime: 1.5
+  chaseRange: 4
+  player: {fileID: 0}
   roamAreaMin: {x: -5, y: -5}
   roamAreaMax: {x: 5, y: 5}
+  attackCooldown: 1
+  damageAmount: 1
 --- !u!114 &2212611162977851945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  spriteRenderer: {fileID: 0}
 --- !u!95 &-463180704775408820
 Animator:
   serializedVersion: 7

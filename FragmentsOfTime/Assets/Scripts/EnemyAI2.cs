@@ -8,7 +8,7 @@ public class EnemyAI2 : MonoBehaviour
 
     private int currentPointIndex = 0;
     private EnemyPathFinding enemyPathFinding;
-    private bool isWaiting = false;
+    // private bool isWaiting = false;
     
     private void Awake()
     {
