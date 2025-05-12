@@ -1,122 +1,143 @@
-using System.Collections;
 using UnityEngine;
 
-// 🎮 This script makes the enemy patrol between points and chase the player if they get close
 public class EnemyAI : MonoBehaviour
 {
-    // 👮 The enemy can be in two states: Patrolling or Chasing
-    private enum EnemyState { Patrolling, Chasing }
-    private EnemyState currentState;
+    private enum State
+    {
+        Patrolling,
+        Chasing
+    }
 
-    [Header("Patrol Settings")]
-    [SerializeField] private Transform[] patrolPoints; // Set patrol positions in Unity
+    [Header("References")]
+    [SerializeField] private Transform[] patrolPoints;  // Set patrol points in Unity
+    [SerializeField] private Transform player;          // Assign player transform
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
+    [Header("Movement")]
+    [SerializeField] private float moveSpeed = 1.5f;
+    private Rigidbody2D rb;
+    private Vector2 moveDirection;
     private int currentPointIndex = 0;
 
-    [Header("Chase Settings")]
-    [SerializeField] private Transform player;         // Reference to the player
-    [SerializeField] private float chaseRange = 4f;    // How close the player needs to be to start chase
-
-    [Header("Attack Settings")]
-    [SerializeField] private float attackCooldown = 1f; // Wait time between attacks
+    [Header("Combat")]
+    [SerializeField] private float chaseRange = 4f;
+    [SerializeField] private float attackRange = 0.8f;
+    [SerializeField] private float attackCooldown = 1f;
     [SerializeField] private int damageAmount = 1;
-    private float lastAttackTime;
+    private float lastAttackTime = -Mathf.Infinity;
 
-    [Header("Wait Time Between Patrols")]
-    [SerializeField] private float waitTime = 1.5f;
+    [Header("Patrol")]
+    [SerializeField] private float waitTime = 1f;
+    private float waitCounter = 0f;
 
-    private EnemyPathFinding movement; // Handles enemy movement
+    [Header("Health")]
+    [SerializeField] private int maxLives = 3;
+    private int currentLives;
+    private bool isDead = false;
 
-    // 🧠 This runs before Start
+    private State state;
+
     private void Awake()
     {
-        movement = GetComponent<EnemyPathFinding>(); // Find the movement script
-        currentState = EnemyState.Patrolling;        // Start in patrol mode
+        rb = GetComponent<Rigidbody2D>();
+        currentLives = maxLives;
+        state = State.Patrolling;
     }
 
-    private void Start()
+    private void Update()
     {
-        StartCoroutine(StateMachine()); // Begin switching between patrol/chase
-    }
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-    // 🔁 Checks every frame if player is close enough to chase
-    private IEnumerator StateMachine()
-    {
-        while (true)
+        // Switch between chasing and patrolling
+        state = distanceToPlayer < chaseRange ? State.Chasing : State.Patrolling;
+
+        if (state == State.Chasing)
         {
-            float distance = Vector2.Distance(transform.position, player.position);
-
-            // Switch to chase if player is close
-            currentState = distance < chaseRange ? EnemyState.Chasing : EnemyState.Patrolling;
-
-            // Run patrol or chase depending on the state
-            if (currentState == EnemyState.Patrolling)
-                yield return StartCoroutine(Patrol());
-            else
-                yield return StartCoroutine(Chase());
-
-            yield return null;
+            ChaseAndAttack(distanceToPlayer);
+        }
+        else
+        {
+            Patrol();
         }
     }
 
-    // 🚶 Walks to the next patrol point
-    private IEnumerator Patrol()
+    private void FixedUpdate()
     {
-        Vector2 targetPos = patrolPoints[currentPointIndex].position;
-        Vector2 moveDirection = (targetPos - (Vector2)transform.position).normalized;
-        movement.MoveTo(moveDirection);
-
-        // Keep walking until close to the patrol point
-        while (Vector2.Distance(transform.position, targetPos) > 0.2f && currentState == EnemyState.Patrolling)
-        {
-            yield return null;
-        }
-
-        // Stop and wait
-        movement.MoveTo(Vector2.zero);
-        yield return new WaitForSeconds(waitTime);
-
-        // Move to next point
-        currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
+        // Move enemy smoothly using physics
+        rb.MovePosition(rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime);
     }
 
-    // 🏃‍♂️ Chases the player
-    private IEnumerator Chase()
+    private void Patrol()
     {
-        while (currentState == EnemyState.Chasing)
-        {
-            Vector2 direction = (player.position - transform.position).normalized;
-            movement.MoveTo(direction);
+        Vector2 target = patrolPoints[currentPointIndex].position;
+        Vector2 dir = (target - (Vector2)transform.position).normalized;
 
-            // Try to attack if close enough
-            float distance = Vector2.Distance(transform.position, player.position);
-            if (distance < 0.8f && Time.time > lastAttackTime + attackCooldown)
+        MoveTo(dir);
+
+        if (Vector2.Distance(transform.position, target) < 0.2f)
+        {
+            MoveTo(Vector2.zero); // stop moving
+            waitCounter += Time.deltaTime;
+
+            if (waitCounter >= waitTime)
             {
-                lastAttackTime = Time.time;
-
-                PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-                if (playerHealth != null)
-                {
-                    playerHealth.TakeDamage(damageAmount);
-                }
+                waitCounter = 0f;
+                currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
             }
-
-            yield return null;
         }
     }
 
-    // 🧱 If we bump into a wall...
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void ChaseAndAttack(float distanceToPlayer)
     {
-        if (collision.gameObject.CompareTag("Wall") && currentState == EnemyState.Patrolling)
+        Vector2 directionToPlayer = (player.position - transform.position).normalized;
+        MoveTo(directionToPlayer);
+
+        // Attack if close and cooldown passed
+        if (distanceToPlayer < attackRange && Time.time >= lastAttackTime + attackCooldown)
         {
-            Debug.Log("Enemy hit a wall. Switching direction.");
-            currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
+            lastAttackTime = Time.time;
+
+            Hero hero = player.GetComponent<Hero>();
+            if (hero != null)
+            {
+                hero.TakeDamage(damageAmount);
+                Debug.Log("Enemy attacked the player!");
+            }
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (isDead) return;
+
+        currentLives -= damage;
+        currentLives = Mathf.Max(0, currentLives); // Ensure doesn't go below 0
+        Debug.Log("Skeleton took damage! Lives left: " + currentLives);
+
+        // Simple red flash (one frame)
+        GetComponent<SpriteRenderer>().color = Color.red;
+        Invoke("ResetColor", 0.2f); // Resets after 0.1 seconds
+
+        if (currentLives <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Debug.Log("Skeleton died! 💀");
+        Destroy(gameObject);
+    }
+
+    private void MoveTo(Vector2 dir)
+    {
+        moveDirection = dir;
+
+        // Flip sprite based on direction
+        if (dir.x != 0)
+        {
+            spriteRenderer.flipX = dir.x < 0;
         }
     }
 }
-
-// 💡 The enemy switches between walking around (Patrolling) and chasing the player (Chasing) based on how close the player is.
-// 🧠 StateMachine() runs forever and decides what the enemy should be doing.
-// 🧭 In Patrol, it walks to a set point, waits, then moves to the next one.
-// 🚨 If the player gets too close, it switches to Chase and follows them.
-// 🧱 If the enemy hits a wall while patrolling, it goes to the next patrol point.
