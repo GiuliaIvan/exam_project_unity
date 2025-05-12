@@ -266,6 +266,10 @@ PrefabInstance:
       value: Skeleton
       objectReference: {fileID: 0}
     - target: {fileID: 2212611162977851945, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212611162977851945, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: moveSpeed
       value: 1.5
       objectReference: {fileID: 0}
@@ -351,7 +355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828083981673244689, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828083981673244689, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: moveSpeed
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6828083981673244689, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: chaseRange
@@ -373,6 +381,10 @@ PrefabInstance:
       propertyPath: roamAreaMin.y
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 6828083981673244689, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 872875391}
     - target: {fileID: 6828083981673244689, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 2
@@ -778,7 +790,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872875385}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a15a8c18e7996d748a32996741321ea0, type: 3}
   m_Name: 
@@ -788,6 +800,9 @@ MonoBehaviour:
   - {fileID: 1336582820}
   waitTime: 1.5
   chaseRange: 4
+  attackRange: 0.8
+  attackCooldown: 1
+  damageAmount: 1
   player: {fileID: 681577167}
 --- !u!1 &998047774
 GameObject:
