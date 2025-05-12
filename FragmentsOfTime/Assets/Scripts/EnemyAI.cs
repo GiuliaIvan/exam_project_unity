@@ -31,15 +31,16 @@ public class EnemyAI : MonoBehaviour
     private float waitCounter = 0f;
 
     [Header("Health")]
-    [SerializeField] private int maxHealth = 3;
-    private int currentHealth;
+    [SerializeField] private int maxLives = 3;
+    private int currentLives;
+    private bool isDead = false;
 
     private State state;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentHealth = maxHealth;
+        currentLives = maxLives;
         state = State.Patrolling;
     }
 
@@ -105,12 +106,19 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(int damage)
     {
-        currentHealth -= amount;
-        Debug.Log("Skeleton took damage! Lives left: " + currentHealth);
+        if (isDead) return;
 
-        if (currentHealth <= 0)
+        currentLives -= damage;
+        currentLives = Mathf.Max(0, currentLives); // Ensure doesn't go below 0
+        Debug.Log("Skeleton took damage! Lives left: " + currentLives);
+
+        // Simple red flash (one frame)
+        GetComponent<SpriteRenderer>().color = Color.red;
+        Invoke("ResetColor", 0.2f); // Resets after 0.1 seconds
+
+        if (currentLives <= 0)
         {
             Die();
         }

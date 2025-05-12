@@ -184,6 +184,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1234214862350608301, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8191358
+      objectReference: {fileID: 0}
+    - target: {fileID: -1234214862350608301, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.2495231
+      objectReference: {fileID: 0}
     - target: {fileID: 3081328642596549398, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
       propertyPath: m_Name
       value: Hero Jr.
@@ -291,11 +299,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.26
+      value: -6.01
       objectReference: {fileID: 0}
     - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.13
+      value: 3.26
       objectReference: {fileID: 0}
     - target: {fileID: 3483966238796640329, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: m_LocalPosition.z
@@ -363,7 +371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828083981673244689, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: chaseRange
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6828083981673244689, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: roamAreaMax.x
@@ -397,13 +405,11 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 1336582820}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2212611162977851945, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2141805668384035963, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 872875393}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
 --- !u!1 &582731396
 GameObject:
@@ -773,37 +779,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4179869549769258743, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
   m_PrefabInstance: {fileID: 118848661}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &872875385 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2141805668384035963, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
-  m_PrefabInstance: {fileID: 472993001}
-  m_PrefabAsset: {fileID: 0}
 --- !u!212 &872875391 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 920825338531488043, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
   m_PrefabInstance: {fileID: 472993001}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &872875393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872875385}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a15a8c18e7996d748a32996741321ea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolPoints:
-  - {fileID: 1841713647}
-  - {fileID: 1336582820}
-  waitTime: 1.5
-  chaseRange: 4
-  attackRange: 0.8
-  attackCooldown: 1
-  damageAmount: 1
-  player: {fileID: 681577167}
 --- !u!1 &998047774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,7 +2467,7 @@ Transform:
   m_GameObject: {fileID: 1336582819}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.6, y: 2.91, z: 0.044436593}
+  m_LocalPosition: {x: -5.22, y: 3.2, z: 0.044436593}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3867,7 +3847,7 @@ Transform:
   m_GameObject: {fileID: 1841713646}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 2.83, z: 0.044436593}
+  m_LocalPosition: {x: -8.25, y: 3.3, z: 0.044436593}
   m_LocalScale: {x: 1.3182, y: 1.3182, z: 1.3182}
   m_ConstrainProportionsScale: 0
   m_Children: []
