@@ -11,7 +11,6 @@ public class EnemyAI : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform[] patrolPoints;  // Set patrol points in Unity
     [SerializeField] private Transform player;          // Assign player transform
-    [SerializeField] private SpriteRenderer spriteRenderer;
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 1.5f;
@@ -134,10 +133,12 @@ public class EnemyAI : MonoBehaviour
     {
         moveDirection = dir;
 
-        // Flip sprite based on direction
+        // Flip by changing local scale instead of SpriteRenderer
         if (dir.x != 0)
         {
-            spriteRenderer.flipX = dir.x < 0;
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Abs(scale.x) * (dir.x < 0 ? -1 : 1);
+            transform.localScale = scale;
         }
     }
 }
