@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  rb: {fileID: 0}
+  rb: {fileID: 382562728}
   animator: {fileID: 382562727}
   maxLives: 5
   shootCooldown: 0.5
@@ -284,6 +284,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!50 &382562728 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: -7572218495829799200, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
+  m_PrefabInstance: {fileID: 382562724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &472993001
 PrefabInstance:
   m_ObjectHideFlags: 0
