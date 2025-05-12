@@ -31,9 +31,17 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("Trap"))
+        if (other.CompareTag("Player") || other.CompareTag("Trap")) return;
+
+        if (other.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
+            EnemyAI enemy = other.GetComponent<EnemyAI>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(1);
+            }
         }
+        Destroy(gameObject);
+        
     }
 }
