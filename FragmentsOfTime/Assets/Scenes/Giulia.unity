@@ -767,13 +767,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8539023563457118500, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3081328642596549398, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 713640431}
     - targetCorrespondingSourceObject: {fileID: 3081328642596549398, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 713640430}
@@ -784,11 +785,6 @@ PrefabInstance:
 --- !u!1 &713640428 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3081328642596549398, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
-  m_PrefabInstance: {fileID: 713640427}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &713640429 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: -7572218495829799200, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
   m_PrefabInstance: {fileID: 713640427}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &713640430
@@ -813,24 +809,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &713640431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713640428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1a50bfd2bb580c4ea685ed9adb75857, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
-  rb: {fileID: 713640429}
-  animator: {fileID: 713640430}
-  maxLives: 5
-  shootCooldown: 0.5
-  arrowPrefab: {fileID: 0}
 --- !u!4 &713640434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4179869549769258743, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
