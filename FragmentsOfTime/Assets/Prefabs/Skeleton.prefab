@@ -171,10 +171,10 @@ MonoBehaviour:
   player: {fileID: 4179869549769258743, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
   spriteRenderer: {fileID: 920825338531488043}
   moveSpeed: 1.5
-  chaseRange: 4
+  chaseRange: 3
   attackRange: 0.8
   attackCooldown: 1
-  damageAmount: 1
+  damage: 1
   waitTime: 1.5
   maxLives: 3
 --- !u!95 &-463180704775408820
