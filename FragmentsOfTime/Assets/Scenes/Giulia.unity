@@ -244,6 +244,10 @@ PrefabInstance:
       propertyPath: isDead
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8539023563457118500, guid: 431a7e83982a0ab4e86608148d9ed1e1, type: 3}
+      propertyPath: maxLives
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3861,7 +3865,7 @@ MonoBehaviour:
   damagingFrameStart: 3
   damagingFrameEnd: 5
   totalFrames: 5
-  damageCooldown: 0.5
+  damageCooldown: 1
 --- !u!1 &1558459941
 GameObject:
   m_ObjectHideFlags: 0
