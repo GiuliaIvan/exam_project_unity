@@ -3,22 +3,16 @@ using UnityEngine;
 public class Spikes : MonoBehaviour
 {
     [SerializeField] private int damage = 1;
-    private float lastDamageTime;
     [SerializeField] private float damageCooldown = 1.5f;
 
+    private float lastDamageTime;
     private Animator animator;
-    private bool canDamage;
-
-    Collider2D spikeCol;
-
-    void Start()
-    {
-        spikeCol = this.GetComponent<Collider2D>();
-    }
+    private Collider2D spikeCol;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
+        spikeCol = GetComponent<Collider2D>();
     }
 
     public void SpikeON()
@@ -31,32 +25,24 @@ public class Spikes : MonoBehaviour
         spikeCol.enabled = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // Only affect GameObjects tagged "Player"
-        if (other.CompareTag("Player"))
-        {
-            Hero player = other.GetComponent<Hero>();
-            if (player != null)
-            {
-                player.TakeDamage(damage);
-                Debug.Log("Player hit by spikes!");
-            }
-        }
-
-        if (!canDamage) return;
-    }
-
     private void OnTriggerStay2D(Collider2D other)
     {
-        Hero hero = other.GetComponent<Hero>();
-        if (hero != null && !hero.isDead && Time.time >= lastDamageTime + damageCooldown)
+        if (other.CompareTag("Player"))
         {
-            hero.TakeDamage(damage);
-            lastDamageTime = Time.time;
+            Hero hero = other.GetComponent<Hero>();
+
+            if (hero != null && !hero.isDead && Time.time >= lastDamageTime + damageCooldown)
+            {
+                hero.TakeDamage(damage);
+                lastDamageTime = Time.time;
+
+                // Optional pushback effect
+                float pushDistance = 0.5f;
+                Vector2 pushDirection = (hero.transform.position - transform.position).normalized;
+                hero.transform.position += (Vector3)(pushDirection * pushDistance);
+
+                Debug.Log("Player damaged by spikes!");
+            }
         }
-
-        if (!canDamage) return;
     }
-
 }
