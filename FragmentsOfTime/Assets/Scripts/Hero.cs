@@ -159,16 +159,4 @@ public class Hero : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-{
-    if (other.CompareTag("Trap"))
-    {
-        TakeDamage(1);
-
-        float pushDistance = 0.5f;
-        Vector2 pushDirection = (transform.position - other.transform.position).normalized;
-        transform.position += (Vector3)(pushDirection * pushDistance);
-    }
-}
-
 }
