@@ -15,7 +15,7 @@ public class Hero : MonoBehaviour
     [Header("Health")]
     public int maxLives = 5;
     private int currentLives;
-    private bool isDead = false;
+    public bool isDead = false;
 
     [Header("Combat")]
     public float shootCooldown = 0.5f;
@@ -26,7 +26,7 @@ public class Hero : MonoBehaviour
     // [Header("Game Over")]
     // public GameObject gameOverScreen; // Assign in inspector
 
-   void Start()
+    void Start()
     {
         currentLives = maxLives;
     }
@@ -55,7 +55,7 @@ public class Hero : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        if((moveX == 0 && moveY == 0 ) && moveDirection.x != 0 || moveDirection.y !=0)
+        if ((moveX == 0 && moveY == 0) && moveDirection.x != 0 || moveDirection.y != 0)
         {
             lastMoveDirection = moveDirection;
         }
@@ -65,7 +65,7 @@ public class Hero : MonoBehaviour
 
     void Move()
     {
-        if (isShooting) 
+        if (isShooting)
         {
             rb.linearVelocity = Vector2.zero; // Force stop if shooting
             return;
@@ -77,14 +77,14 @@ public class Hero : MonoBehaviour
     public void TakeDamage(int damage)
     {
         if (isDead) return;
-        
+
         currentLives -= damage;
         currentLives = Mathf.Max(0, currentLives); // Ensure doesn't go below 0
 
         // Simple red flash (one frame)
         GetComponent<SpriteRenderer>().color = Color.red;
         Invoke("ResetColor", 0.2f); // Resets after 0.1 seconds
-        
+
         if (currentLives <= 0)
         {
             Die();
@@ -99,14 +99,14 @@ public class Hero : MonoBehaviour
     void Die()
     {
         isDead = true;
-        
+
         //Trigger death animation
         animator.SetTrigger("Die");
-        
+
         //Stop movement
         rb.linearVelocity = Vector2.zero;
         rb.simulated = false; // Disables physics collisions
-        
+
         // Game over handling (call your game manager)
         // GameManager.Instance.PlayerDied();
     }
@@ -148,14 +148,27 @@ public class Hero : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Trap"))
         {
             TakeDamage(1);
-            
+
             //pushback (no physics force)
             float pushDistance = 0.5f;
             Vector2 pushDirection = (transform.position - collision.transform.position).normalized;
             transform.position += (Vector3)(pushDirection * pushDistance);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+{
+    if (other.CompareTag("Trap"))
+    {
+        TakeDamage(1);
+
+        float pushDistance = 0.5f;
+        Vector2 pushDirection = (transform.position - other.transform.position).normalized;
+        transform.position += (Vector3)(pushDirection * pushDistance);
+    }
+}
+
 }
