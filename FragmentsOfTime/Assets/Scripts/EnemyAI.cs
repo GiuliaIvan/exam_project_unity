@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] float moveSpeed = 1.5f;
-    [SerializeField] float chaseRange = 4f;
+    [SerializeField] float chaseRange = 3f;
     [SerializeField] float attackRange = 0.8f;
     [SerializeField] float attackCooldown = 1f;
     [SerializeField] int damage = 1;
@@ -31,7 +31,14 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         if (isDead) return;
-        
+
+        // ✅ Check if player is dead and go back to patrolling
+        if (player.GetComponent<Hero>().isDead)
+        {
+            Patrol();
+            return; // Prevent further logic
+        }
+
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         if (distanceToPlayer < chaseRange)
@@ -67,9 +74,18 @@ public class EnemyAI : MonoBehaviour
 
     void ChaseAndAttack(float distanceToPlayer)
     {
-        Vector2 dir = (player.position - transform.position).normalized;
-        MoveTo(dir);
+        // If extremely close to the player, stop moving to avoid jitter
+        if (distanceToPlayer < 0.1f)
+        {
+            MoveTo(Vector2.zero);
+        }
+        else
+        {
+            Vector2 dir = (player.position - transform.position).normalized;
+            MoveTo(dir);
+        }
 
+        // Attack if in range and cooldown passed
         if (distanceToPlayer < attackRange && Time.time >= lastAttackTime + attackCooldown)
         {
             lastAttackTime = Time.time;
@@ -104,6 +120,10 @@ public class EnemyAI : MonoBehaviour
     void MoveTo(Vector2 dir)
     {
         moveDirection = dir;
-        if (dir.x != 0) spriteRenderer.flipX = dir.x < 0;
+        // if (dir.x != 0) spriteRenderer.flipX = dir.x < 0;
+        if (Mathf.Abs(dir.x) > 0.05f)  // Avoid flipping rapidly when nearly still
+        {
+            spriteRenderer.flipX = dir.x < 0;
+        }
     }
 }

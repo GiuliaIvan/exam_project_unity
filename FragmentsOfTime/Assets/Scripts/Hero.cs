@@ -15,7 +15,7 @@ public class Hero : MonoBehaviour
     [Header("Health")]
     public int maxLives = 5;
     private int currentLives;
-    private bool isDead = false;
+    public bool isDead = false;
 
     [Header("Combat")]
     public float shootCooldown = 0.5f;
