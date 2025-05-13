@@ -21,11 +21,13 @@ public class Spikes : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void SpikeON(){
+    public void SpikeON()
+    {
         spikeCol.enabled = true;
     }
 
-    public void SpikeOFF(){
+    public void SpikeOFF()
+    {
         spikeCol.enabled = false;
     }
 
@@ -47,14 +49,14 @@ public class Spikes : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (!canDamage) return;
-
         Hero hero = other.GetComponent<Hero>();
         if (hero != null && !hero.isDead && Time.time >= lastDamageTime + damageCooldown)
         {
             hero.TakeDamage(damage);
             lastDamageTime = Time.time;
         }
+
+        if (!canDamage) return;
     }
 
 }
