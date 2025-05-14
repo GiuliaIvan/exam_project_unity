@@ -1265,6 +1265,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   damageCooldown: 1.5
+--- !u!61 &1298254479
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298254471}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6666667, y: 1.3333334}
+    newSize: {x: 0.6666667, y: 1.3333334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.6666667, y: 1.3333334}
+  m_EdgeRadius: 0
 --- !u!1 &1375273870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,12 +2405,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 991534105633002371, guid: a69813a8208283247b3528e9e2aa12c6, type: 3}
+    - {fileID: 4948851154065798348, guid: a69813a8208283247b3528e9e2aa12c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1931716052776527286, guid: a69813a8208283247b3528e9e2aa12c6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1298254475}
+    - targetCorrespondingSourceObject: {fileID: 1931716052776527286, guid: a69813a8208283247b3528e9e2aa12c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1298254479}
   m_SourcePrefab: {fileID: 100100000, guid: a69813a8208283247b3528e9e2aa12c6, type: 3}
 --- !u!1001 &2683146794592565717
 PrefabInstance:
@@ -2589,7 +2639,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes-2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -914951983573049999, guid: c990d90a0543155418e3db2298ecb669, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2706,7 +2757,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4222198332708210212, guid: b8b0b2c637c78764caa2be567137801d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
