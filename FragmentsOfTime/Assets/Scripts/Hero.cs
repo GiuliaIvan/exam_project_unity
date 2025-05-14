@@ -28,7 +28,13 @@ public class Hero : MonoBehaviour
 
     void Start()
     {
+        // Debug.Log("Player start");
+        // Debug.Log("isDead: " + isDead);
+        // Debug.Log("rb.simulated: " + rb.simulated);
         currentLives = maxLives;
+        isDead = false; // force reset
+        rb.simulated = true;
+
     }
 
     void Update()
