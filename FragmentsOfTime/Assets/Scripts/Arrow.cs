@@ -31,7 +31,7 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("Trap")) return;
+        if (other.CompareTag("Player") || other.CompareTag("Trap") || other.CompareTag("Item")) return;
 
         if (other.CompareTag("Enemy"))
         {
