@@ -67,6 +67,40 @@ public class Hero : MonoBehaviour
         }
 
         moveDirection = new Vector2(moveX, moveY).normalized;
+
+        if (Input.GetKeyDown(KeyCode.E))
+            InventoryUIManager.Instance.ToggleInventory();
+
+        for (int i = 0; i < 9; i++)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+                InventorySystem.Instance.SelectSlot(i);
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            InventorySystem.Instance.DropSelectedItem(transform.position);
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            TryPickupItem();
+        }
+    }
+
+    private void TryPickupItem()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1f);
+        foreach (Collider2D collider in colliders)
+        {
+            PickupItem pickup = collider.GetComponent<PickupItem>();
+            if (pickup != null)
+            {
+                // This will trigger the pickup logic in the PickupItem script
+                pickup.Pickup();
+                break;
+            }
+        }
     }
 
     void Move()

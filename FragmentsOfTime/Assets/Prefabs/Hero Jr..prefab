@@ -183,6 +183,18 @@ MonoBehaviour:
   isDead: 1
   shootCooldown: 0.5
   arrowPrefab: {fileID: 8293729471376588615, guid: d9dc1c2f2c41f6145b74356a67fec171, type: 3}
+  slots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  selectedSlot: 0
+  dropPrefab: {fileID: 0}
 --- !u!95 &7615614284950687831
 Animator:
   serializedVersion: 7
