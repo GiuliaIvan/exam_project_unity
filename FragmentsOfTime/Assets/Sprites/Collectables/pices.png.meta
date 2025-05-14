@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goldball
+      name: coin
       rect:
         serializedVersion: 2
         x: 27
@@ -531,8 +531,8 @@ TextureImporter:
       axe: 8256749177466061967
       book: 2024540308447028077
       chest: -8543165789545988279
+      coin: -5103887132308531822
       crown: 8017619990235626586
-      goldball: -5103887132308531822
       horseshoe: 803535454543282376
       hourglass: 8540916072121935540
       image-removebg-preview (4)_7: 1048715345850093203
