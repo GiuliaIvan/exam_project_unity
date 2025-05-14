@@ -14,6 +14,9 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float waitTime = 1f;
     [SerializeField] int maxLives = 3;
 
+    [SerializeField] float visionAngle = 90f;
+    [SerializeField] LayerMask obstacleMask;
+
     Rigidbody2D rb;
     Vector2 moveDirection;
     int currentPointIndex;
@@ -41,7 +44,7 @@ public class EnemyAI : MonoBehaviour
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (distanceToPlayer < chaseRange)
+        if (CanSeePlayer())
         {
             ChaseAndAttack(distanceToPlayer);
         }
@@ -125,5 +128,43 @@ public class EnemyAI : MonoBehaviour
         {
             spriteRenderer.flipX = dir.x < 0;
         }
+    }
+
+    bool CanSeePlayer()
+    {
+        if (player == null) return false;
+
+        Vector2 dirToPlayer = player.position - transform.position;
+        float distance = dirToPlayer.magnitude;
+
+        // Draw the Raycast in the Scene view
+        Debug.DrawRay(transform.position, dirToPlayer.normalized * distance, Color.green);
+
+        if (distance > chaseRange) return false;
+
+        float angle = Vector2.Angle(transform.right, dirToPlayer.normalized);
+        if (angle > visionAngle / 2f) return false;
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirToPlayer.normalized, distance, obstacleMask);
+        if (hit.collider != null && !hit.collider.CompareTag("Player"))
+        {
+            return false;
+        }
+
+        return true;
+    }
+
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
+
+        Vector3 rightLimit = Quaternion.Euler(0, 0, visionAngle / 2) * transform.right;
+        Vector3 leftLimit = Quaternion.Euler(0, 0, -visionAngle / 2) * transform.right;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, transform.position + rightLimit * chaseRange);
+        Gizmos.DrawLine(transform.position, transform.position + leftLimit * chaseRange);
     }
 }

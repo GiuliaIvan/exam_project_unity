@@ -406,6 +406,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 872875391}
     - target: {fileID: 6828083981673244689, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
+      propertyPath: obstacleMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828083981673244689, guid: a5191ac0d3147c846a4ba1ec1f698c52, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -713,9 +717,9 @@ GameObject:
   - component: {fileID: 654730105}
   - component: {fileID: 654730104}
   - component: {fileID: 654730106}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid Walls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2507,7 +2511,7 @@ GameObject:
   - component: {fileID: 1521364147}
   - component: {fileID: 1521364146}
   - component: {fileID: 1521364145}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
