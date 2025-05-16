@@ -1,28 +1,22 @@
 fileFormatVersion: 2
-guid: 25e378ce9b6c3ca41b05bb884bb882b2
+guid: 4690ecc32cd38dc4f9a76637fa794cb4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9199933652275504748
-    second: Holy_Grail_0
+      213: -3752070232927634260
+    second: CollectionCTA_0
   - first:
-      213: 7087032859970854909
-    second: Holy_Grail_1
+      213: -2895264866199584481
+    second: CollectionCTA_1
   - first:
-      213: -6144482741012331773
-    second: Holy_Grail_2
+      213: -3842326875967360057
+    second: CollectionCTA_2
   - first:
-      213: 9140138794816025317
-    second: Holy_Grail_3
+      213: 4119106104478766543
+    second: CollectionCTA_3
   - first:
-      213: 4565923542658180347
-    second: Holy_Grail_4
-  - first:
-      213: -7659668721824130302
-    second: Holy_Grail_5
-  - first:
-      213: -6274251077419855550
-    second: Holy_Grail_6
+      213: 3275609456317203585
+    second: CollectionCTA_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -118,23 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cup
+      name: CollectionCTA_0
       rect:
         serializedVersion: 2
-        x: 77
-        y: 30
-        width: 206
-        height: 300
+        x: 34
+        y: 45
+        width: 410
+        height: 457
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 303017d70896abaa0800000000000000
-      internalID: -6144482741012331773
+      spriteID: cacf702a008fdebc0800000000000000
+      internalID: -3752070232927634260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollectionCTA_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 499
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f114187a1f3f1d7d0800000000000000
+      internalID: -2895264866199584481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollectionCTA_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 499
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3770750105daac0800000000000000
+      internalID: -3842326875967360057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollectionCTA_3
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 499
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc599959d210a2930800000000000000
+      internalID: 4119106104478766543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollectionCTA_4
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 499
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18482b2127d457d20800000000000000
+      internalID: 3275609456317203585
       vertices: []
       indices: 
       edges: []
@@ -143,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 730f4edb2c54b56458b51865a2b17fa8
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -153,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cup: -6144482741012331773
+      CollectionCTA_0: -3752070232927634260
+      CollectionCTA_1: -2895264866199584481
+      CollectionCTA_2: -3842326875967360057
+      CollectionCTA_3: 4119106104478766543
+      CollectionCTA_4: 3275609456317203585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

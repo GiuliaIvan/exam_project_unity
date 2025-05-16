@@ -1,0 +1,889 @@
+fileFormatVersion: 2
+guid: fee7252e51d2aa047b4a810e11cce635
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6322841899982183920
+    second: Artifacts_0
+  - first:
+      213: 5733055235031021666
+    second: Artifacts_1
+  - first:
+      213: -8454803829586038505
+    second: Artifacts_2
+  - first:
+      213: 179043671145297668
+    second: Artifacts_3
+  - first:
+      213: -8154789829856559759
+    second: Artifacts_4
+  - first:
+      213: -882776447150909336
+    second: Artifacts_5
+  - first:
+      213: -1840567244533406053
+    second: Artifacts_6
+  - first:
+      213: -4528937619208538868
+    second: Artifacts_7
+  - first:
+      213: -2006561443332068348
+    second: Artifacts_8
+  - first:
+      213: 6470532127045375218
+    second: Artifacts_9
+  - first:
+      213: -4783672639765816820
+    second: Artifacts_10
+  - first:
+      213: -6195931691965236854
+    second: Artifacts_11
+  - first:
+      213: 5458067754427719081
+    second: Artifacts_12
+  - first:
+      213: 1643844694526494298
+    second: Artifacts_13
+  - first:
+      213: -8050413255504939728
+    second: Artifacts_14
+  - first:
+      213: -2886173912065121662
+    second: Artifacts_15
+  - first:
+      213: 7422313104631629557
+    second: Artifacts_16
+  - first:
+      213: -7008624258932665378
+    second: Artifacts_17
+  - first:
+      213: 1506234891951783373
+    second: Artifacts_18
+  - first:
+      213: -3812070091825823008
+    second: Artifacts_19
+  - first:
+      213: 5268594611238697725
+    second: Artifacts_20
+  - first:
+      213: -1222402190108480098
+    second: Artifacts_21
+  - first:
+      213: -7468130200896957244
+    second: Artifacts_22
+  - first:
+      213: -4672840178992577148
+    second: Artifacts_23
+  - first:
+      213: 7052127818010389620
+    second: Artifacts_24
+  - first:
+      213: -95590273959775613
+    second: Artifacts_25
+  - first:
+      213: -1674217619445951896
+    second: Artifacts_26
+  - first:
+      213: 8196109244381122231
+    second: Artifacts_27
+  - first:
+      213: 7364917813216991899
+    second: Artifacts_28
+  - first:
+      213: -2977713352558263352
+    second: Artifacts_29
+  - first:
+      213: -3079679584122799042
+    second: Artifacts_30
+  - first:
+      213: 290033251769074740
+    second: Artifacts_31
+  - first:
+      213: -8056283800915558513
+    second: Artifacts_32
+  - first:
+      213: 1709619285349674751
+    second: Artifacts_33
+  - first:
+      213: 8380155532249205988
+    second: Artifacts_34
+  - first:
+      213: -6757456717653884133
+    second: Artifacts_35
+  - first:
+      213: 7555699168041150024
+    second: Artifacts_36
+  - first:
+      213: 5164069903891451492
+    second: Artifacts_37
+  - first:
+      213: -7060268825053000722
+    second: Artifacts_38
+  - first:
+      213: 4045930803358670230
+    second: Artifacts_39
+  - first:
+      213: 7697860838038374413
+    second: Artifacts_40
+  - first:
+      213: -4647185470959836235
+    second: Artifacts_41
+  - first:
+      213: 7741983484398778068
+    second: Artifacts_42
+  - first:
+      213: 8979510893725813
+    second: Artifacts_43
+  - first:
+      213: 4074816181244106114
+    second: Artifacts_44
+  - first:
+      213: -6376773398216449673
+    second: Artifacts_45
+  - first:
+      213: -7247466682877045091
+    second: Artifacts_46
+  - first:
+      213: 1620490885867324456
+    second: Artifacts_47
+  - first:
+      213: -3894060056284561798
+    second: Artifacts_48
+  - first:
+      213: -4518828035275652151
+    second: Artifacts_49
+  - first:
+      213: -7402788938449584295
+    second: Artifacts_50
+  - first:
+      213: 4240456573560317840
+    second: Artifacts_51
+  - first:
+      213: -2680875485028978633
+    second: Artifacts_52
+  - first:
+      213: -8710130782684579753
+    second: Artifacts_53
+  - first:
+      213: 6920350238235346502
+    second: Artifacts_54
+  - first:
+      213: -2056284541915076845
+    second: Artifacts_55
+  - first:
+      213: 5544960180291069830
+    second: Artifacts_56
+  - first:
+      213: 7850331760496849582
+    second: Artifacts_57
+  - first:
+      213: 5524381744166069802
+    second: Artifacts_58
+  - first:
+      213: -5163424014706956711
+    second: Artifacts_59
+  - first:
+      213: -8858963103112954926
+    second: Artifacts_60
+  - first:
+      213: 941526145130659640
+    second: Artifacts_61
+  - first:
+      213: -494585980809069213
+    second: Artifacts_62
+  - first:
+      213: -1616813039205673243
+    second: Artifacts_63
+  - first:
+      213: -7884175704925340126
+    second: Artifacts_64
+  - first:
+      213: 6740030975440011021
+    second: Artifacts_65
+  - first:
+      213: -8747826535012029061
+    second: Artifacts_66
+  - first:
+      213: -609819724729799765
+    second: Artifacts_67
+  - first:
+      213: -877298879581403519
+    second: Artifacts_68
+  - first:
+      213: -6470084976666883505
+    second: Artifacts_69
+  - first:
+      213: 6477325769010670000
+    second: Artifacts_70
+  - first:
+      213: 3809393771933192041
+    second: Artifacts_71
+  - first:
+      213: 7238403430865151579
+    second: Artifacts_72
+  - first:
+      213: -8532959295452271527
+    second: Artifacts_73
+  - first:
+      213: 3420162093314635064
+    second: Artifacts_74
+  - first:
+      213: -4273495543285524206
+    second: Artifacts_75
+  - first:
+      213: 5025606431604168295
+    second: Artifacts_76
+  - first:
+      213: -943484887433125569
+    second: Artifacts_77
+  - first:
+      213: 1017815312762466918
+    second: Artifacts_78
+  - first:
+      213: 7403829059847202724
+    second: Artifacts_79
+  - first:
+      213: -7175057220878087441
+    second: Artifacts_80
+  - first:
+      213: -8792428933442143190
+    second: Artifacts_81
+  - first:
+      213: -7083209238239041682
+    second: Artifacts_82
+  - first:
+      213: -2384028991159169613
+    second: Artifacts_83
+  - first:
+      213: 6879565716528801117
+    second: Artifacts_84
+  - first:
+      213: -4142393095483704470
+    second: Artifacts_85
+  - first:
+      213: -150652324399612501
+    second: Artifacts_86
+  - first:
+      213: -4438053459084529559
+    second: Artifacts_87
+  - first:
+      213: -95378405734024217
+    second: Artifacts_88
+  - first:
+      213: 5561859063357725646
+    second: Artifacts_89
+  - first:
+      213: 7995374553310806091
+    second: Artifacts_90
+  - first:
+      213: -2610929439483177321
+    second: Artifacts_91
+  - first:
+      213: 3608401834052002642
+    second: Artifacts_92
+  - first:
+      213: -5791317584109854035
+    second: Artifacts_93
+  - first:
+      213: -4575466221943409800
+    second: Artifacts_94
+  - first:
+      213: 1635458233883353602
+    second: Artifacts_95
+  - first:
+      213: 5230173319247331838
+    second: Artifacts_96
+  - first:
+      213: 1032525440274456625
+    second: Artifacts_97
+  - first:
+      213: 3355056417012477344
+    second: Artifacts_98
+  - first:
+      213: -4809569803685731787
+    second: Artifacts_99
+  - first:
+      213: -1502980784362687051
+    second: Artifacts_100
+  - first:
+      213: 5278032319806618204
+    second: Artifacts_101
+  - first:
+      213: -2875687241742486542
+    second: Artifacts_102
+  - first:
+      213: -5202857758120537885
+    second: Artifacts_103
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: book-active
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 515
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96ed54c7ddf476e0800000000000000
+      internalID: -1840567244533406053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cup-active
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 263
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ad001441bfc9db0800000000000000
+      internalID: -4783672639765816820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armor-active
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 11
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56892b4a0c10d610800000000000000
+      internalID: 1643844694526494298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: book-inactive
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 511
+        width: 232
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38235acf6256caef0800000000000000
+      internalID: -95590273959775613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cup-inactive
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 261
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862593c02fbf3c8e0800000000000000
+      internalID: -1674217619445951896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armor-inactive
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 11
+        width: 232
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bec1a3deed6eb170800000000000000
+      internalID: 8196109244381122231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword-active
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 516
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec0d3e7e0b4c4470800000000000000
+      internalID: 8380155532249205988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helmet-active
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 263
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846aecc8c5c3bd860800000000000000
+      internalID: 7555699168041150024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crown-active
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 11
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb83f719e2e40e90800000000000000
+      internalID: -7060268825053000722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword-inactive
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 521
+        width: 229
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097688869c029da30800000000000000
+      internalID: 4240456573560317840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helmet-inactive
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 262
+        width: 234
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7307bc343fd9bcad0800000000000000
+      internalID: -2680875485028978633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crown-inactive
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 11
+        width: 233
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758f3ee83366f1780800000000000000
+      internalID: -8710130782684579753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: staff-active
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 512
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbf8a89ef3ae0580800000000000000
+      internalID: -8858963103112954926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letter-active
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 263
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dbcfebba0e229f0800000000000000
+      internalID: -494585980809069213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crossbow-active
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 14
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ef821f7f7c59290800000000000000
+      internalID: -7884175704925340126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letter-inactive
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 265
+        width: 232
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3169916e7118e2f0800000000000000
+      internalID: -943484887433125569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crossbow-inactive
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 11
+        width: 234
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662f82462a1002e00800000000000000
+      internalID: 1017815312762466918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: staff-inactive
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 513
+        width: 234
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a728e18d4fafb660800000000000000
+      internalID: 7403829059847202724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scroll-active
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 260
+        width: 229
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd89bf734a3aeed0800000000000000
+      internalID: -2384028991159169613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scroll-inactive
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 264
+        width: 232
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb5932a951bf2d40800000000000000
+      internalID: 5561859063357725646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e0b16cdf51639374dbd220aa396546a4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      armor-active: 1643844694526494298
+      armor-inactive: 8196109244381122231
+      book-active: -1840567244533406053
+      book-inactive: -95590273959775613
+      crossbow-active: -7884175704925340126
+      crossbow-inactive: 1017815312762466918
+      crown-active: -7060268825053000722
+      crown-inactive: -8710130782684579753
+      cup-active: -4783672639765816820
+      cup-inactive: -1674217619445951896
+      helmet-active: 7555699168041150024
+      helmet-inactive: -2680875485028978633
+      letter-active: -494585980809069213
+      letter-inactive: -943484887433125569
+      scroll-active: -2384028991159169613
+      scroll-inactive: 5561859063357725646
+      staff-active: -8858963103112954926
+      staff-inactive: 7403829059847202724
+      sword-active: 8380155532249205988
+      sword-inactive: 4240456573560317840
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

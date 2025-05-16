@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 467df19babc9d5b43a86383810112200
+guid: 2cc9c02bd777f634d901b952d0323c8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6548351561670562359
-    second: istockphoto-1329119766-170667a-removebg-preview_0
+      213: 2963559714340616089
+    second: Camp - Background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: crown
+      name: Camp - Background_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 11
-        width: 510
-        height: 306
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cd604603f49f15a0800000000000000
-      internalID: -6548351561670562359
+      spriteID: 9973eebcbdda02920800000000000000
+      internalID: 2963559714340616089
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3816a79f3f5db4743b3cddca22522b70
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      crown: -6548351561670562359
+      Camp - Background_0: 2963559714340616089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
