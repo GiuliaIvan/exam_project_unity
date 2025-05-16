@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4dddd978daea74d88329c8d3edb447, type: 3}
+  m_Name: Cup
+  m_EditorClassIdentifier: 
+  artifactName: The Holy Grail
+  description: "Origin: Legendary \u2014 many believe medieval Europe\r\n\r\nSaid
+    to be the cup used by Jesus at the Last Supper, this legendary object has been
+    hunted by knights, kings, and secret societies. Its true form is unknown, but
+    legends say it grants eternal life or divine wisdom to whoever finds it.\r\n\r\nDid
+    You Know?\r\n- There are over 200 claimed \u201Cgrails\" in Europe.\r\n- The
+    Grail appears in stories of King Arthur and the Knights of the Round Table.\r\n-
+    Some say it\u2019s not a cup at all \u2014 but a metaphor for truth."
+  artifactSprite: {fileID: -6144482741012331773, guid: 3221305d9518f99439097ff3a5399c5f, type: 3}
+  buttonActiveSprite: {fileID: -4783672639765816820, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  buttonInactiveSprite: {fileID: -1674217619445951896, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  collected: 0

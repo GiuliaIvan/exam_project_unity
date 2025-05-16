@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 8ef9269ec1377f8498fa1573152b7346
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1512362123037016765
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_0
+  - first:
+      213: 4635624671369346935
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_1
+  - first:
+      213: 4877745649347403574
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_2
+  - first:
+      213: -1693108276035908770
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_3
+  - first:
+      213: 3628227926890752881
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_4
+  - first:
+      213: 6447846202343839067
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_5
+  - first:
+      213: 2831282583201603288
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_6
+  - first:
+      213: -2257366439285395566
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_7
+  - first:
+      213: 455055500965833175
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_8
+  - first:
+      213: -6810602121244921428
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_9
+  - first:
+      213: 529340353556935926
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_10
+  - first:
+      213: -7463434135031738718
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_11
+  - first:
+      213: -2623401158940064269
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_12
+  - first:
+      213: 7688867562100198942
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_13
+  - first:
+      213: 4344565973488356756
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_14
+  - first:
+      213: -8356450788838431188
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_15
+  - first:
+      213: 3778230135037287717
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_16
+  - first:
+      213: -2481843503274835391
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_17
+  - first:
+      213: 7723363692467420027
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_18
+  - first:
+      213: 6483367612745875996
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_19
+  - first:
+      213: -3999104099899779529
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_20
+  - first:
+      213: 3486672212107171413
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_21
+  - first:
+      213: 9186067648570561030
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_22
+  - first:
+      213: -2983040325759935286
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_23
+  - first:
+      213: 8652791253671268792
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_24
+  - first:
+      213: -7493737949570318234
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_25
+  - first:
+      213: 6046906086288436445
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_26
+  - first:
+      213: 1669158648690934164
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_27
+  - first:
+      213: -5819832597091781776
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_28
+  - first:
+      213: -1210221907134660364
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_29
+  - first:
+      213: 6336969198837496649
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_30
+  - first:
+      213: -1551119894417182970
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_31
+  - first:
+      213: 1820147825199490965
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_32
+  - first:
+      213: -3947776623959605765
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_33
+  - first:
+      213: 2923116128260868092
+    second: create-high-quality-pixel-art-sprites-tilesets-and-icons-removebg-preview_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sword-small-1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 309
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d7f9479a2030be0800000000000000
+      internalID: -1512362123037016765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow-small-1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 308
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fb109f31c055040800000000000000
+      internalID: 4635624671369346935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helmet-small-1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 312
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f1f0e13db31b340800000000000000
+      internalID: 4877745649347403574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armor-small-1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 308
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b0b905efed088e0800000000000000
+      internalID: -1693108276035908770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pants-1
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 306
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ba97a831e0a5230800000000000000
+      internalID: 3628227926890752881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gloves-1
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 303
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b555e0975f95b7950800000000000000
+      internalID: 6447846202343839067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boots-1
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 302
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de5b76328cba4720800000000000000
+      internalID: 2831282583201603288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword-small-2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 238
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f618afe293ca0e0800000000000000
+      internalID: -2257366439285395566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow-small-2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 237
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9e720319ea05600800000000000000
+      internalID: 455055500965833175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helmet-small-2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 235
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1bca07471eb71a0800000000000000
+      internalID: -6810602121244921428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armor-small-2
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 236
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f47a0b3f38985700800000000000000
+      internalID: 529340353556935926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pants-2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 235
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae88e8723e8c6890800000000000000
+      internalID: -7463434135031738718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gloves-2
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 228
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5870a9b8ec79bd0800000000000000
+      internalID: -2623401158940064269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boots-2
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 229
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e81047f4854ba60800000000000000
+      internalID: 7688867562100198942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword-small-3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 167
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49dc5010cbffa4c30800000000000000
+      internalID: 4344565973488356756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow-small-3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 158
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26a04c284ce70c80800000000000000
+      internalID: -8356450788838431188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helmet-small-3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 162
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52dd2963a48fe6430800000000000000
+      internalID: 3778230135037287717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armor-small-3
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 160
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142413fab78be8dd0800000000000000
+      internalID: -2481843503274835391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pants-3
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 162
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b7ba0bb56ee2b60800000000000000
+      internalID: 7723363692467420027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gloves-3
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 155
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c128df15e7c89f950800000000000000
+      internalID: 6483367612745875996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boots-3
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 156
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7365aa162045088c0800000000000000
+      internalID: -3999104099899779529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: staff-small-1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 93
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5569fda57e5236030800000000000000
+      internalID: 3486672212107171413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: staff-small-3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 85
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60291c34bd77b7f70800000000000000
+      internalID: 9186067648570561030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helmet-small-4
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 88
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: accd968e0ac1a96d0800000000000000
+      internalID: -2983040325759935286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armor-small
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 82
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1deaefcc3e41870800000000000000
+      internalID: 8652791253671268792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pants
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 84
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6604ff3d905e00890800000000000000
+      internalID: -7493737949570318234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gloves
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 81
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcae5f2c0deae350800000000000000
+      internalID: 6046906086288436445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boots
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 82
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4918ef882fa0a2710800000000000000
+      internalID: 1669158648690934164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: staff-small-2
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 14
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073fa16761dcb3fa0800000000000000
+      internalID: -5819832597091781776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: staff-small
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 12
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0c7d5669d643fe0800000000000000
+      internalID: -1210221907134660364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard-hat
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 20
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bfc4169ef61f750800000000000000
+      internalID: 6336969198837496649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard-dress
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 10
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fe8399ca0597ae0800000000000000
+      internalID: -1551119894417182970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard-pant
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 18
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59727bfadc6724910800000000000000
+      internalID: 1820147825199490965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard-gloves
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 11
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfdfb44a31ea639c0800000000000000
+      internalID: -3947776623959605765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard-boots
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 14
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7443e91aef09820800000000000000
+      internalID: 2923116128260868092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6185961d621e11d47b5f26669dec42d8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      armor-small: 8652791253671268792
+      armor-small-1: -1693108276035908770
+      armor-small-2: 529340353556935926
+      armor-small-3: -2481843503274835391
+      boots: 1669158648690934164
+      boots-1: 2831282583201603288
+      boots-2: 7688867562100198942
+      boots-3: -3999104099899779529
+      bow-small-1: 4635624671369346935
+      bow-small-2: 455055500965833175
+      bow-small-3: -8356450788838431188
+      gloves: 6046906086288436445
+      gloves-1: 6447846202343839067
+      gloves-2: -2623401158940064269
+      gloves-3: 6483367612745875996
+      helmet-small-1: 4877745649347403574
+      helmet-small-2: -6810602121244921428
+      helmet-small-3: 3778230135037287717
+      helmet-small-4: -2983040325759935286
+      pants: -7493737949570318234
+      pants-1: 3628227926890752881
+      pants-2: -7463434135031738718
+      pants-3: 7723363692467420027
+      staff-small: -1210221907134660364
+      staff-small-1: 3486672212107171413
+      staff-small-2: -5819832597091781776
+      staff-small-3: 9186067648570561030
+      sword-small-1: -1512362123037016765
+      sword-small-2: -2257366439285395566
+      sword-small-3: 4344565973488356756
+      wizard-boots: 2923116128260868092
+      wizard-dress: -1551119894417182970
+      wizard-gloves: -3947776623959605765
+      wizard-hat: 6336969198837496649
+      wizard-pant: 1820147825199490965
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

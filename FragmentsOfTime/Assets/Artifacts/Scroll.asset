@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4dddd978daea74d88329c8d3edb447, type: 3}
+  m_Name: Scroll
+  m_EditorClassIdentifier: 
+  artifactName: Scroll of the King's Code
+  description: "Origin: France, c. 1220 CE\r\n\r\r\nThis ornate scroll contains royal
+    laws issued by King Louis IX, known for justice and fairness. The script is gold-leafed,
+    surrounded by painted scenes of court trials and village life. It once hung in
+    the town square, read aloud to all.\r\n \r\n\rDid You Know?\r\n\r- Public laws
+    were often sung or performed aloud so everyone could understand.\r\n- This scroll
+    includes one of the first bans on trial by combat.\r\n- The ink was made from
+    oak gall and iron salts \u2014 almost immortal."
+  artifactSprite: {fileID: 4859708892074471264, guid: a9bdbbd50b910de4199ef9d03394fbf8, type: 3}
+  buttonActiveSprite: {fileID: -2384028991159169613, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  buttonInactiveSprite: {fileID: 5561859063357725646, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  collected: 0

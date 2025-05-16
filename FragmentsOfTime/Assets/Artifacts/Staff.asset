@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4dddd978daea74d88329c8d3edb447, type: 3}
+  m_Name: Staff
+  m_EditorClassIdentifier: 
+  artifactName: Staff of Hildegard
+  description: "Origin: Germany, c. 1150 CE\r\n\r\nBelonging to Hildegard of Bingen,
+    a mystic, healer, and composer, this staff was used during her walks through
+    the abbey gardens where she gathered herbs and spoke of visions. Intricately
+    carved with vines and stars, it was said to glow faintly during her trances.\r\n\r\nDid
+    You Know?\r\n- Hildegard wrote books on medicine, nature, and theology \u2014
+    centuries ahead of her time.\r\n- Her visions were once considered divine messages.\r\n-
+    This staff may have doubled as a teaching tool for her nuns."
+  artifactSprite: {fileID: -2792479776889299543, guid: a9bdbbd50b910de4199ef9d03394fbf8, type: 3}
+  buttonActiveSprite: {fileID: -8858963103112954926, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  buttonInactiveSprite: {fileID: 7403829059847202724, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  collected: 0
