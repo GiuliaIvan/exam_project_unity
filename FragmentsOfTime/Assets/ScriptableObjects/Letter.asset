@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509c8a1d0f01e00469ba7e6c86339b64, type: 3}
+  m_Name: Letter
+  m_EditorClassIdentifier: 
+  itemName: Letter to a Distant Knight
+  icon: {fileID: 7304166578166386202, guid: 66f9847f68d8c4b43843fe678f65be7e, type: 3}
+  worldPrefab: {fileID: 1375427909767981508, guid: 6bd3d37fe8c3c474e880651f826a4956, type: 3}
+  description: "Origin: England, c. 1380 CE\r\n\r\nA personal letter penned by a
+    noblewoman to her lover, a knight away on campaign. Written in Middle English
+    with poetic flourishes, it speaks of dreams, longing, and war. The seal bears
+    a rose \u2014 now cracked but still red with time.\r\n \r\n\rDid You Know?\r\n-
+    Noblewomen were often educated scribes, writing in both Latin and vernacular.\r\n-
+    Love letters were frequently coded to avoid scandal.\r\n- Some historians believe
+    this letter was never sent."
+  buttonActiveSprite: {fileID: -494585980809069213, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  buttonInactiveSprite: {fileID: -943484887433125569, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  collected: 0
