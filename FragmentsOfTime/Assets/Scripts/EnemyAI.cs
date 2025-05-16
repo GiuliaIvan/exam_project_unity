@@ -7,12 +7,14 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] float moveSpeed = 1.5f;
-    [SerializeField] float chaseRange = 3f;
+    [SerializeField] float chaseRange = 2f;
     [SerializeField] float attackRange = 0.8f;
     [SerializeField] float attackCooldown = 1f;
     [SerializeField] int damage = 1;
     [SerializeField] float waitTime = 1f;
     [SerializeField] int maxLives = 3;
+
+    [SerializeField] LayerMask obstacleMask;
 
     Rigidbody2D rb;
     Vector2 moveDirection;
@@ -41,7 +43,7 @@ public class EnemyAI : MonoBehaviour
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (distanceToPlayer < chaseRange)
+        if (CanSeePlayer())
         {
             ChaseAndAttack(distanceToPlayer);
         }
@@ -126,4 +128,17 @@ public class EnemyAI : MonoBehaviour
             spriteRenderer.flipX = dir.x < 0;
         }
     }
+
+    bool CanSeePlayer()
+    {
+        if (player == null) return false;
+
+        Vector2 dirToPlayer = player.position - transform.position;
+        float distance = dirToPlayer.magnitude;
+
+        if (distance > chaseRange) return false;
+
+        return true;
+    }
+
 }

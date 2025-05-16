@@ -22,6 +22,9 @@ public class Hero : MonoBehaviour
     private bool canShoot = true;
     private bool isShooting = false;
     public GameObject arrowPrefab;
+    public GameObject playerLight;
+    public float rotationSpeed = 5f;
+
 
     // [Header("Game Over")]
     // public GameObject gameOverScreen; // Assign in inspector
@@ -43,6 +46,7 @@ public class Hero : MonoBehaviour
 
         ProcessInputs();
         Animate();
+        RotateLight();
 
         if (Input.GetKeyDown(KeyCode.Space) && canShoot)
         {
@@ -196,6 +200,17 @@ public class Hero : MonoBehaviour
             float pushDistance = 0.5f;
             Vector2 pushDirection = (transform.position - collision.transform.position).normalized;
             transform.position += (Vector3)(pushDirection * pushDistance);
+        }
+    }
+
+    void RotateLight()
+    {
+        if (moveDirection != Vector2.zero)
+        {
+            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+            Quaternion targetRotation = Quaternion.Euler(0, 0, angle - 90f);
+            playerLight.transform.rotation = Quaternion.Lerp(playerLight.transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+
         }
     }
 
