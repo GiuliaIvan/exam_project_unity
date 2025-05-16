@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4dddd978daea74d88329c8d3edb447, type: 3}
+  m_Name: TestArtifact
+  m_EditorClassIdentifier: 
+  artifactName: Ancient Idol
+  description: A relic from the forgotten jungle civilization.
+  artifactSprite: {fileID: -324631261464543303, guid: 0df85c6884cb6db4c968d67a627b6438, type: 3}
