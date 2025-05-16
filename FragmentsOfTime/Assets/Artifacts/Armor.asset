@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4dddd978daea74d88329c8d3edb447, type: 3}
+  m_Name: Armor
+  m_EditorClassIdentifier: 
+  artifactName: "Knight\u2019s Armor"
+  description: "Origin: Europe, 13th\u201315th centuries\r\n\r\r\nWorn by medieval
+    knights in battle and ceremony, this steel shell could weigh up to 25\u201330
+    kg. It was crafted to protect without limiting movement \u2014 and made knights
+    look like walking legends.\r\n\r\nDid You Know?\r\n\r- Helmets had narrow slits
+    to protect eyes \u2014 but knights often lifted them to breathe.\r\n- Some suits
+    were personalized with family crests or hidden messages.\r\n- Jousting armor
+    was even heavier \u2014 built just for sport!"
+  artifactSprite: {fileID: 8652791253671268792, guid: 8ef9269ec1377f8498fa1573152b7346, type: 3}
+  buttonActiveSprite: {fileID: 1643844694526494298, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  buttonInactiveSprite: {fileID: 8196109244381122231, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  collected: 0

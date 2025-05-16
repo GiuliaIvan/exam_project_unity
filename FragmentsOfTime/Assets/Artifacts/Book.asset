@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4dddd978daea74d88329c8d3edb447, type: 3}
+  m_Name: Book
+  m_EditorClassIdentifier: 
+  artifactName: The Book of Kells
+  description: "Origin: Ireland, c. 800 CE\n\r\r\nAn ancient book of gospels, created
+    by monks on a remote Irish island. Every page glows with intricate artwork \u2014
+    swirls, animals, and secret symbols \u2014 painted with ink made from plants,
+    stones, and even beetles.\r\n\nDid You Know?\r\n- It\u2019s written in Latin.\r\n-
+    Some letters are so decorated they look like miniature mazes.\r\n- Scholars believe
+    it was never meant to be read \u2014 but seen."
+  artifactSprite: {fileID: 3647310797597140219, guid: a9bdbbd50b910de4199ef9d03394fbf8, type: 3}
+  buttonActiveSprite: {fileID: -1840567244533406053, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  buttonInactiveSprite: {fileID: -95590273959775613, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  collected: 1
