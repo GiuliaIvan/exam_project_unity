@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 509c8a1d0f01e00469ba7e6c86339b64, type: 3}
   m_Name: Crown
   m_EditorClassIdentifier: 
-  itemName: Crown
-  icon: {fileID: 8017619990235626586, guid: 0df85c6884cb6db4c968d67a627b6438, type: 3}
+  itemName: The Crown of Charlemagne
+  icon: {fileID: 21300000, guid: b1632887c47004b488aeb182ff86a388, type: 3}
   worldPrefab: {fileID: 2258248628560394938, guid: 1fd6a44819cd6ca46a3c63be0c45366d, type: 3}
+  description: "Origin: France/Germany, 8th\u20139th century\r\n\r\nA legendary crown
+    said to have been worn by Charlemagne, the first Holy Roman Emperor. Gold, jewels,
+    and enamel tell stories of kingship and divine rule. Later emperors wore it during
+    coronations for over 500 years.\r\n\r\nDid You Know?\r\n\r- It was kept in a
+    vault in Aachen Cathedral for centuries.\r\n- The crown is asymmetrical \u2014
+    some say on purpose, to show humility.\r\n- Napoleon dreamed of stealing it to
+    crown himself."
+  buttonActiveSprite: {fileID: -7060268825053000722, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  buttonInactiveSprite: {fileID: -8710130782684579753, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  collected: 0

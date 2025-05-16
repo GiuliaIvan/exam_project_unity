@@ -6,4 +6,9 @@ public class ItemData : ScriptableObject
     public string itemName;
     public Sprite icon;
     public GameObject worldPrefab;
+    [TextArea] public string description;
+    public Sprite buttonActiveSprite;      // Button image when collected
+    public Sprite buttonInactiveSprite;    // Button image when not collected
+
+    public bool collected;                 // Is the artifact collected?
 }

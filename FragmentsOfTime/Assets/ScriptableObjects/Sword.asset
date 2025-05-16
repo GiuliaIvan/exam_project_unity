@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509c8a1d0f01e00469ba7e6c86339b64, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  itemName: Ulfberht Sword
+  icon: {fileID: -102115506903674249, guid: 65ac1e41704991440a3f6b0e699a4f45, type: 3}
+  worldPrefab: {fileID: 7331373637743456535, guid: d9ca3bae5e865d84297fde373e4ffc72, type: 3}
+  description: "Origin: Scandinavia / Germany, 9th\u201311th centuries\r\n\r\r\nA
+    rare Viking sword made with such pure steel that scientists were stunned. \u201C+ULFBERHT+\u201D
+    is engraved on the blade \u2014 likely a brand or signature. Owning one meant
+    power, status\u2026 and cutting-edge (literally) tech.\r\n\r\nDid You Know?\r\n\r-
+    These swords were made with steel so strong it wouldn't be matched for another
+    800 years.\r\n- Only around 170 have ever been found.\r\n- Some are fakes \u2014
+    early medieval knockoffs!"
+  buttonActiveSprite: {fileID: 8380155532249205988, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  buttonInactiveSprite: {fileID: 4240456573560317840, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  collected: 0
