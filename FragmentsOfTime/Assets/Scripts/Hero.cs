@@ -31,13 +31,7 @@ public class Hero : MonoBehaviour
 
     void Start()
     {
-        // Debug.Log("Player start");
-        // Debug.Log("isDead: " + isDead);
-        // Debug.Log("rb.simulated: " + rb.simulated);
-        currentLives = maxLives;
-        isDead = false; // force reset
-        rb.simulated = true;
-
+        ResetLives();
     }
 
     void Update()
@@ -124,6 +118,8 @@ public class Hero : MonoBehaviour
 
         currentLives -= damage;
         currentLives = Mathf.Max(0, currentLives); // Ensure doesn't go below 0
+
+        LifeManager.Instance.UpdateLives(currentLives);
 
         // Simple red flash (one frame)
         GetComponent<SpriteRenderer>().color = Color.red;
@@ -213,5 +209,14 @@ public class Hero : MonoBehaviour
 
         }
     }
+
+    public void ResetLives()
+    {
+        currentLives = maxLives;
+        isDead = false;
+        rb.simulated = true;
+        LifeManager.Instance.UpdateLives(currentLives);
+    }
+
 
 }
