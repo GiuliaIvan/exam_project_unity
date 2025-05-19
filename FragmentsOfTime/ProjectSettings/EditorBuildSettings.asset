@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Camp.unity
     guid: 7893548f19909ea4c95f7b95ec12a275
   - enabled: 1
+    path: Assets/Scenes/level1.unity
+    guid: 903e32e6b822a44449c82e74c59290ec
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 68c686f90924bb04785338a50af60cc1
   m_configObjects:
