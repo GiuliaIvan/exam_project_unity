@@ -32,6 +32,7 @@ public class Hero : MonoBehaviour
     void Start()
     {
         ResetLives();
+        CoinManager.Instance.StartLevel();
     }
 
     void Update()
@@ -83,6 +84,11 @@ public class Hero : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             TryPickupItem();
+        }
+
+        if (Input.GetKeyDown(KeyCode.L)) //add that when the player leaves level
+        {
+            CoinManager.Instance.OnLevelComplete();
         }
     }
 
@@ -146,6 +152,8 @@ public class Hero : MonoBehaviour
         //Stop movement
         rb.linearVelocity = Vector2.zero;
         rb.simulated = false; // Disables physics collisions
+
+        CoinManager.Instance.OnPlayerDeath();
 
         // Game over handling (call your game manager)
         // GameManager.Instance.PlayerDied();
