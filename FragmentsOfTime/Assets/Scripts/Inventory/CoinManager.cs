@@ -1,19 +1,22 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CoinManager : MonoBehaviour
 {
     public static CoinManager Instance;
-    public int currentCoins = 0;
-    public TMP_Text coinText; // Assign in Inspector
+
+    public int currentCoins = 0;       // Total coins saved between sessions
+    private int levelCoins = 0;        // Coins collected during the current level
+
+    public TMP_Text coinLevelText;     // Shows coins collected during level
+    public TMP_Text coinTotalText;     // Shows total coins collected
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optional: Persist across scenes
+            DontDestroyOnLoad(gameObject); // Optional: persists across scenes
         }
         else
         {
@@ -25,38 +28,70 @@ public class CoinManager : MonoBehaviour
     {
         LoadCoins();
         UpdateCoinUI();
-       // ResetCoins(); //remove after testing
     }
 
-    public void AddCoins(int amount)
+    // Call this at the beginning of a level
+    public void StartLevel()
     {
-        currentCoins += amount;
+        levelCoins = 0;
         UpdateCoinUI();
-        SaveCoins();
     }
 
+    // Call this during gameplay to add coins
+    public void AddLevelCoins(int amount)
+    {
+        levelCoins += amount;
+        UpdateCoinUI();
+    }
+
+    // Call this if the player completes the level
+    public void OnLevelComplete()
+    {
+        currentCoins += levelCoins;
+        SaveCoins();
+        levelCoins = 0;
+        UpdateCoinUI();
+    }
+
+    // Call this if the player dies or fails the level
+    public void OnPlayerDeath()
+    {
+        levelCoins = 0;
+        UpdateCoinUI();
+    }
+
+    // Updates both level and total coin UI texts
     private void UpdateCoinUI()
     {
-        if (coinText != null)
+        if (coinLevelText != null)
         {
-            coinText.text = " " + currentCoins;
+            coinLevelText.text = levelCoins.ToString();
+        }
+
+        if (coinTotalText != null)
+        {
+            coinTotalText.text = currentCoins.ToString();
         }
     }
 
+    // Save total coins to PlayerPrefs
     private void SaveCoins()
     {
         PlayerPrefs.SetInt("Coins", currentCoins);
     }
 
+    // Load total coins from PlayerPrefs
     private void LoadCoins()
     {
         currentCoins = PlayerPrefs.GetInt("Coins", 0);
     }
 
-    public void ResetCoins() // remove after testing
-    {
-        currentCoins = 0;
-        UpdateCoinUI();
-    }
-
+    // Optional: Reset saved coins (for development/testing)
+    //public void ResetCoins()
+    //{
+    //    currentCoins = 0;
+    //    levelCoins = 0;
+//        SaveCoins();
+     //   UpdateCoinUI();
+    //}
 }

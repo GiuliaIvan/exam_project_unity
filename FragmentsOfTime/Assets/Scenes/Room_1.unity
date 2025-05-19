@@ -3785,6 +3785,10 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 4242105325917324519}
+    - target: {fileID: 2355187396021173362, guid: c9ddea2ee8ae82249a12caaeec4c1576, type: 3}
+      propertyPath: coinLevelText
+      value: 
+      objectReference: {fileID: 4242105325917324519}
     - target: {fileID: 4203755556155037549, guid: c9ddea2ee8ae82249a12caaeec4c1576, type: 3}
       propertyPath: m_Name
       value: CoinManager
