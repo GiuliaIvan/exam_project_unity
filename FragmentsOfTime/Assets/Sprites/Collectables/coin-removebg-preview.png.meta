@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      coin-removebg-preview_0: 1409828130122727214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
