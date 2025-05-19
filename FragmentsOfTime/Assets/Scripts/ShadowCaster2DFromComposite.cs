@@ -69,7 +69,5 @@ public class ShadowCaster2DFromComposite : MonoBehaviour
             so.ApplyModifiedProperties();
 #endif
         }
-
-        Debug.Log("Shadow casters created.");
     }
 }
