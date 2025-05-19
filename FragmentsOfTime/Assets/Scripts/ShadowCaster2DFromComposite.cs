@@ -11,8 +11,10 @@ public class ShadowCaster2DFromComposite : MonoBehaviour
 {
     void Start()
     {
+        if (!Application.isPlaying) return;
         GenerateShadowCasters();
     }
+
 
     void GenerateShadowCasters()
     {
@@ -45,6 +47,8 @@ public class ShadowCaster2DFromComposite : MonoBehaviour
 
             GameObject caster = new GameObject("ShadowCaster2D");
             caster.transform.SetParent(transform, false);
+
+            caster.layer = LayerMask.NameToLayer("ShadowCasterLayer");
 
             var shadowCaster = caster.AddComponent<ShadowCaster2D>();
             var poly = caster.AddComponent<PolygonCollider2D>();

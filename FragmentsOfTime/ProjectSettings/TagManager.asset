@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Wall
   - Item
+  - Decor
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Water
   - UI
   - Walls
-  - 
+  - 'ShadowCasterLayer '
   - 
   - 
   - 
