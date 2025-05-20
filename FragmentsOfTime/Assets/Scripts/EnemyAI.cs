@@ -136,9 +136,21 @@ public class EnemyAI : MonoBehaviour
         Vector2 dirToPlayer = player.position - transform.position;
         float distance = dirToPlayer.magnitude;
 
+        // 1. Is player within range?
         if (distance > chaseRange) return false;
 
+        // 2. Raycast to check for obstacles
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirToPlayer.normalized, distance, obstacleMask);
+
+        // 3. If the ray hit something, line of sight is blocked
+        if (hit.collider != null)
+        {
+            return false;
+        }
+
+        // 4. No obstacle in the way
         return true;
     }
+
 
 }
