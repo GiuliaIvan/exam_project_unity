@@ -6,13 +6,13 @@ public class ArtifactCollectionManager : MonoBehaviour
     public List<ArtifactButton> artifactButtons;
 
     // Called when a new artifact is collected
-    public void MarkCollected(ArtifactData data)
+    public void MarkCollected(ItemData data)
     {
         data.collected = true;
 
         foreach (ArtifactButton button in artifactButtons)
         {
-            if (button.artifactData == data)
+            if (button.itemData == data)
             {
                 button.SetCollected(true);
             }
@@ -25,18 +25,18 @@ public class ArtifactCollectionManager : MonoBehaviour
         foreach (ArtifactButton button in artifactButtons)
         {
             button.SetCollected(false);
-            button.artifactData.collected = false;
+            button.itemData.collected = false;
         }
     }
 
-    public List<ArtifactData> GetCollectedArtifacts()
+    public List<ItemData> GetCollectedArtifacts()
     {
-        List<ArtifactData> collected = new List<ArtifactData>();
+        List<ItemData> collected = new List<ItemData>();
         foreach (ArtifactButton button in artifactButtons)
         {
-            if (button.artifactData.collected)
+            if (button.itemData.collected)
             {
-                collected.Add(button.artifactData);
+                collected.Add(button.itemData);
             }
         }
         return collected;

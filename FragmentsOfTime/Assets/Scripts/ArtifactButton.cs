@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class ArtifactButton : MonoBehaviour
 {
-    public ArtifactData artifactData;
+    public ItemData itemData;
     public ArtifactInfoPanel infoPanel;
 
     private Image image;
@@ -23,27 +23,27 @@ public class ArtifactButton : MonoBehaviour
 
     void RefreshVisual()
     {
-        if (artifactData.collected)
+        if (itemData.collected)
         {
-            image.sprite = artifactData.buttonActiveSprite;
+            image.sprite = itemData.buttonActiveSprite;
             button.interactable = true;
         }
         else
         {
-            image.sprite = artifactData.buttonInactiveSprite;
+            image.sprite = itemData.buttonInactiveSprite;
             button.interactable = false;
         }
     }
 
     public void OnClick()
     {
-        infoPanel.ShowPanel(artifactData);
+        infoPanel.ShowPanel(itemData);
     }
 
     // Call this later when the artifact gets collected
     public void SetCollected(bool collected)
     {
-        artifactData.collected = collected;
+        itemData.collected = collected;
         RefreshVisual();
     }
 }
