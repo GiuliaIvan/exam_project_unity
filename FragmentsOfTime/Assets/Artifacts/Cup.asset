@@ -20,7 +20,7 @@ MonoBehaviour:
     You Know?\r\n- There are over 200 claimed \u201Cgrails\" in Europe.\r\n- The
     Grail appears in stories of King Arthur and the Knights of the Round Table.\r\n-
     Some say it\u2019s not a cup at all \u2014 but a metaphor for truth."
-  artifactSprite: {fileID: -6144482741012331773, guid: 3221305d9518f99439097ff3a5399c5f, type: 3}
+  artifactSprite: {fileID: -4783672639765816820, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonActiveSprite: {fileID: -4783672639765816820, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: -1674217619445951896, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   collected: 0

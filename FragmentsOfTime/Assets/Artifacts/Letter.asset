@@ -20,7 +20,7 @@ MonoBehaviour:
     Noblewomen were often educated scribes, writing in both Latin and vernacular.\r\n-
     Love letters were frequently coded to avoid scandal.\r\n- Some historians believe
     this letter was never sent."
-  artifactSprite: {fileID: 7304166578166386202, guid: 66f9847f68d8c4b43843fe678f65be7e, type: 3}
+  artifactSprite: {fileID: -494585980809069213, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonActiveSprite: {fileID: -494585980809069213, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: -943484887433125569, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   collected: 0

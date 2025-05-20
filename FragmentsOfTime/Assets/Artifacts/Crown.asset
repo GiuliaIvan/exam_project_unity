@@ -20,7 +20,7 @@ MonoBehaviour:
     vault in Aachen Cathedral for centuries.\r\n- The crown is asymmetrical \u2014
     some say on purpose, to show humility.\r\n- Napoleon dreamed of stealing it to
     crown himself."
-  artifactSprite: {fileID: -6548351561670562359, guid: b1632887c47004b488aeb182ff86a388, type: 3}
+  artifactSprite: {fileID: -7060268825053000722, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonActiveSprite: {fileID: -7060268825053000722, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: -8710130782684579753, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
-  collected: 0
+  collected: 1
