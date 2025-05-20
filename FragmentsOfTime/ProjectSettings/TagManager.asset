@@ -10,6 +10,7 @@ TagManager:
   - Item
   - Decor
   - Decor
+  - Barrel
   layers:
   - Default
   - TransparentFX
