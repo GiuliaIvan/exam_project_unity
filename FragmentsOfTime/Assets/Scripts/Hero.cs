@@ -25,14 +25,9 @@ public class Hero : MonoBehaviour
     public GameObject playerLight;
     public float rotationSpeed = 5f;
 
-
-    // [Header("Game Over")]
-    // public GameObject gameOverScreen; // Assign in inspector
-
     void Start()
     {
-        ResetLives();
-        CoinManager.Instance.StartLevel();
+        GameManager.Instance.StartGame(this);
     }
 
     void Update()
@@ -49,7 +44,7 @@ public class Hero : MonoBehaviour
         }
     }
 
-    void FixedUpdate() // runs at fixed intervals (by default every 0.02 seconds, or 50 times per second), regardless of your frame rate
+    void FixedUpdate()
     {
         if (isDead) return;
         Move();
@@ -60,7 +55,7 @@ public class Hero : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        if ((moveX == 0 && moveY == 0) && moveDirection.x != 0 || moveDirection.y != 0)
+        if ((moveX == 0 && moveY == 0) && (moveDirection.x != 0 || moveDirection.y != 0))
         {
             lastMoveDirection = moveDirection;
         }
@@ -86,9 +81,9 @@ public class Hero : MonoBehaviour
             TryPickupItem();
         }
 
-        if (Input.GetKeyDown(KeyCode.L)) //add that when the player leaves level
+        if (Input.GetKeyDown(KeyCode.L))
         {
-            CoinManager.Instance.OnLevelComplete();
+            GameManager.Instance.LevelComplete();
         }
     }
 
@@ -100,7 +95,6 @@ public class Hero : MonoBehaviour
             PickupItem pickup = collider.GetComponent<PickupItem>();
             if (pickup != null)
             {
-                // This will trigger the pickup logic in the PickupItem script
                 pickup.Pickup();
                 break;
             }
@@ -111,7 +105,7 @@ public class Hero : MonoBehaviour
     {
         if (isShooting)
         {
-            rb.linearVelocity = Vector2.zero; // Force stop if shooting
+            rb.linearVelocity = Vector2.zero;
             return;
         }
 
@@ -123,13 +117,12 @@ public class Hero : MonoBehaviour
         if (isDead) return;
 
         currentLives -= damage;
-        currentLives = Mathf.Max(0, currentLives); // Ensure doesn't go below 0
+        currentLives = Mathf.Max(0, currentLives);
 
         LifeManager.Instance.UpdateLives(currentLives);
 
-        // Simple red flash (one frame)
         GetComponent<SpriteRenderer>().color = Color.red;
-        Invoke("ResetColor", 0.2f); // Resets after 0.1 seconds
+        Invoke("ResetColor", 0.2f);
 
         if (currentLives <= 0)
         {
@@ -146,17 +139,12 @@ public class Hero : MonoBehaviour
     {
         isDead = true;
 
-        //Trigger death animation
         animator.SetTrigger("Die");
 
-        //Stop movement
         rb.linearVelocity = Vector2.zero;
-        rb.simulated = false; // Disables physics collisions
+        rb.simulated = false;
 
-        CoinManager.Instance.OnPlayerDeath();
-
-        // Game over handling (call your game manager)
-        // GameManager.Instance.PlayerDied();
+        GameManager.Instance.PlayerDied();
     }
 
     void Shoot()
@@ -167,7 +155,6 @@ public class Hero : MonoBehaviour
         canShoot = false;
         animator.SetTrigger("Shoot");
 
-        // Immediately stop movement
         rb.linearVelocity = Vector2.zero;
 
         GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
@@ -186,21 +173,20 @@ public class Hero : MonoBehaviour
         animator.SetFloat("AnimMoveY", moveDirection.y);
         animator.SetFloat("AnimMoveMagnitude", moveDirection.magnitude);
 
-        if (moveDirection.x != 0 || moveDirection.y != 0)
+        if (moveDirection != Vector2.zero)
         {
             lastMoveDirection = moveDirection;
             animator.SetFloat("AnimLastMoveX", lastMoveDirection.x);
             animator.SetFloat("AnimLastMoveY", lastMoveDirection.y);
         }
-
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Trap"))
         {
             TakeDamage(1);
 
-            //pushback (no physics force)
             float pushDistance = 0.5f;
             Vector2 pushDirection = (transform.position - collision.transform.position).normalized;
             transform.position += (Vector3)(pushDirection * pushDistance);
@@ -214,7 +200,6 @@ public class Hero : MonoBehaviour
             float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
             Quaternion targetRotation = Quaternion.Euler(0, 0, angle - 90f);
             playerLight.transform.rotation = Quaternion.Lerp(playerLight.transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
-
         }
     }
 
@@ -225,6 +210,4 @@ public class Hero : MonoBehaviour
         rb.simulated = true;
         LifeManager.Instance.UpdateLives(currentLives);
     }
-
-
 }

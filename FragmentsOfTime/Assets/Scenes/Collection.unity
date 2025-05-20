@@ -1286,6 +1286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1538995571 stripped
+
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9030816383566201030, guid: 9c11372b0c5bd8545b9da991ad2aaf73, type: 3}
   m_PrefabInstance: {fileID: 4045468105911532074}
@@ -1356,12 +1357,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+
 --- !u!4 &1703671714
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_GameObject: {fileID: 1703671712}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1372,6 +1375,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1703671715
+
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1384,15 +1388,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectionManager: {fileID: 1181007222}
-  artifactToCollect: {fileID: 11400000, guid: 42778e3bcc97c4c459ad9a9aeec534f3, type: 2}
+  artifactToCollect: {fileID: 0}
 --- !u!114 &1746894364 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4027893174988395991, guid: 633dabe5c87413546ab88312d8fb9140, type: 3}
   m_PrefabInstance: {fileID: 735207270353620073}
+
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+
   m_Script: {fileID: 11500000, guid: 13196e2ba7b00f345be919dadc6916ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1513,6 +1519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13196e2ba7b00f345be919dadc6916ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+
 --- !u!1 &2086766753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,6 +1649,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 678351012}
     m_Modifications:
+    - target: {fileID: 1873762195296752587, guid: b27dfa2f908235a428472932496a174d, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: d2282811de569d8478affa1f8f789476, type: 2}
     - target: {fileID: 1873762195296752587, guid: b27dfa2f908235a428472932496a174d, type: 3}
       propertyPath: infoPanel
       value: 
@@ -1824,6 +1835,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4027893174988395991, guid: 633dabe5c87413546ab88312d8fb9140, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: bc58a74485ea852439e7701aa8e93797, type: 2}
+    - target: {fileID: 4027893174988395991, guid: 633dabe5c87413546ab88312d8fb9140, type: 3}
       propertyPath: infoPanel
       value: 
       objectReference: {fileID: 1903765698}
@@ -1844,6 +1859,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 678351012}
     m_Modifications:
+    - target: {fileID: 646310173040792234, guid: 87e2a413159be53439d807acaf8d4dff, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: d8434313a5f00a54892b77547c2f3936, type: 2}
     - target: {fileID: 646310173040792234, guid: 87e2a413159be53439d807acaf8d4dff, type: 3}
       propertyPath: infoPanel
       value: 
@@ -2030,6 +2049,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6986317878813803154, guid: eaac7706fef41da4296a217b1fbb5d0e, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 7c55fd5f8e1d949409562051d9c54170, type: 2}
+    - target: {fileID: 6986317878813803154, guid: eaac7706fef41da4296a217b1fbb5d0e, type: 3}
       propertyPath: infoPanel
       value: 
       objectReference: {fileID: 1903765698}
@@ -2127,9 +2150,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8010623631974572812, guid: dd7069d8ffbea884abba3891285335a2, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ba987bd2f9347e458f15c0739621ed8, type: 2}
+    - target: {fileID: 8010623631974572812, guid: dd7069d8ffbea884abba3891285335a2, type: 3}
       propertyPath: infoPanel
       value: 
       objectReference: {fileID: 1903765698}
+    - target: {fileID: 8010623631974572812, guid: dd7069d8ffbea884abba3891285335a2, type: 3}
+      propertyPath: artifactData
+      value: 
+      objectReference: {fileID: 11400000, guid: cb4bb655b1497be4ba463757c9fa3219, type: 2}
     - target: {fileID: 8841481450904678018, guid: dd7069d8ffbea884abba3891285335a2, type: 3}
       propertyPath: m_Name
       value: Book
@@ -2232,6 +2263,10 @@ PrefabInstance:
       value: Staff
       objectReference: {fileID: 0}
     - target: {fileID: 9030816383566201030, guid: 9c11372b0c5bd8545b9da991ad2aaf73, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: e0909bf05c4fd254581d6d3fcec88be0, type: 2}
+    - target: {fileID: 9030816383566201030, guid: 9c11372b0c5bd8545b9da991ad2aaf73, type: 3}
       propertyPath: infoPanel
       value: 
       objectReference: {fileID: 1903765698}
@@ -2252,6 +2287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armor
       objectReference: {fileID: 0}
+    - target: {fileID: 8727768659435073614, guid: 24b27e032a803ba47851d2e342bd06ab, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 091b79d8214f1854d9a18477763186be, type: 2}
     - target: {fileID: 8727768659435073614, guid: 24b27e032a803ba47851d2e342bd06ab, type: 3}
       propertyPath: infoPanel
       value: 
@@ -2434,6 +2473,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5623415849721158909, guid: 92518b07e9cae7346b5ade3882c95119, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 973e828f069302e4ab071b39dcd1632e, type: 2}
+    - target: {fileID: 5623415849721158909, guid: 92518b07e9cae7346b5ade3882c95119, type: 3}
       propertyPath: infoPanel
       value: 
       objectReference: {fileID: 1903765698}
@@ -2531,6 +2574,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4027880607979564658, guid: a9cd33fb64a0c784a829af1dee39aaca, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: f383a3ac0d4b82748b1ebebdd59eca83, type: 2}
+    - target: {fileID: 4027880607979564658, guid: a9cd33fb64a0c784a829af1dee39aaca, type: 3}
       propertyPath: infoPanel
       value: 
       objectReference: {fileID: 1903765698}
@@ -2585,11 +2632,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2392503801616732394, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 36.4772
+      value: 0.00024414
       objectReference: {fileID: 0}
     - target: {fileID: 2392503801616732394, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 20.6176
+      value: 0.21216
       objectReference: {fileID: 0}
     - target: {fileID: 2392503801616732394, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2621,11 +2668,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2392503801616732394, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.000091552734
       objectReference: {fileID: 0}
     - target: {fileID: 2392503801616732394, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 10.309
+      value: 0.1060791
       objectReference: {fileID: 0}
     - target: {fileID: 2392503801616732394, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2912,6 +2959,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6927703581069694623, guid: e7fdb2319ff691647b4809462b40d18e, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c867088bdd7ae14ab0bc8d34ba5ebeb, type: 2}
     - target: {fileID: 6927703581069694623, guid: e7fdb2319ff691647b4809462b40d18e, type: 3}
       propertyPath: infoPanel
       value: 

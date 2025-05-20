@@ -3,14 +3,14 @@ using UnityEngine;
 public class ArtifactCollector : MonoBehaviour
 {
     public ArtifactCollectionManager collectionManager;
-    public ArtifactData artifactToCollect;
+    public ItemData artifactToCollect;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
             collectionManager.MarkCollected(artifactToCollect);
-            Debug.Log("Collected: " + artifactToCollect.artifactName);
+            Debug.Log("Collected: " + artifactToCollect.itemName);
         }
         else if (Input.GetKeyDown(KeyCode.R))
         {

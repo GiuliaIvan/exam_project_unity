@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class ArtifactInfoPanel : MonoBehaviour
 {
@@ -19,14 +20,16 @@ public class ArtifactInfoPanel : MonoBehaviour
         }
     }
 
-   public void ShowPanel(ArtifactData data)
-{
-    titleText.text = data.artifactName;
-    descriptionText.text = data.description;
-    artifactImage.sprite = data.artifactSprite;
+    public void ShowPanel(ItemData data)
+    {
+        titleText.text = data.itemName;
+        descriptionText.text = data.description;
+        artifactImage.sprite = data.icon;
 
-    gameObject.SetActive(true);
-}
+        gameObject.SetActive(true);
+        
+        throw new NotImplementedException();
+    }
 
 
     public void HidePanel()
