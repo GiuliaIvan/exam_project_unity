@@ -81,10 +81,6 @@ public class Hero : MonoBehaviour
             TryPickupItem();
         }
 
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            GameManager.Instance.LevelComplete();
-        }
     }
 
     private void TryPickupItem()

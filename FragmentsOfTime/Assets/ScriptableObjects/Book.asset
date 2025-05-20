@@ -23,4 +23,4 @@ MonoBehaviour:
     it was never meant to be read \u2014 but seen."
   buttonActiveSprite: {fileID: -1840567244533406053, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: -95590273959775613, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
-  collected: 0
+  collected: 1
