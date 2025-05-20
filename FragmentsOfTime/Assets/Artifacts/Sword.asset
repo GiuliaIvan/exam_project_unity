@@ -20,7 +20,7 @@ MonoBehaviour:
     These swords were made with steel so strong it wouldn't be matched for another
     800 years.\r\n- Only around 170 have ever been found.\r\n- Some are fakes \u2014
     early medieval knockoffs!"
-  artifactSprite: {fileID: -102115506903674249, guid: 65ac1e41704991440a3f6b0e699a4f45, type: 3}
+  artifactSprite: {fileID: 8380155532249205988, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonActiveSprite: {fileID: 8380155532249205988, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: 4240456573560317840, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   collected: 0

@@ -20,7 +20,7 @@ MonoBehaviour:
     armor from 150 meters away.\r\n- Archers trained from childhood \u2014 some even
     slept with their bows.\r\n- Legend says this one never missed a moving target
     under moonlight."
-  artifactSprite: {fileID: 455055500965833175, guid: 8ef9269ec1377f8498fa1573152b7346, type: 3}
+  artifactSprite: {fileID: -7884175704925340126, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonActiveSprite: {fileID: -7884175704925340126, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: 1017815312762466918, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   collected: 0

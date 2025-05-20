@@ -20,7 +20,7 @@ MonoBehaviour:
     to protect eyes \u2014 but knights often lifted them to breathe.\r\n- Some suits
     were personalized with family crests or hidden messages.\r\n- Jousting armor
     was even heavier \u2014 built just for sport!"
-  artifactSprite: {fileID: 8652791253671268792, guid: 8ef9269ec1377f8498fa1573152b7346, type: 3}
+  artifactSprite: {fileID: 1643844694526494298, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonActiveSprite: {fileID: 1643844694526494298, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: 8196109244381122231, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   collected: 0

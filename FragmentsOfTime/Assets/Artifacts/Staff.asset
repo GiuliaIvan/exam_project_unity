@@ -20,7 +20,7 @@ MonoBehaviour:
     You Know?\r\n- Hildegard wrote books on medicine, nature, and theology \u2014
     centuries ahead of her time.\r\n- Her visions were once considered divine messages.\r\n-
     This staff may have doubled as a teaching tool for her nuns."
-  artifactSprite: {fileID: -2792479776889299543, guid: a9bdbbd50b910de4199ef9d03394fbf8, type: 3}
+  artifactSprite: {fileID: -8858963103112954926, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonActiveSprite: {fileID: -8858963103112954926, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: 7403829059847202724, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   collected: 0
