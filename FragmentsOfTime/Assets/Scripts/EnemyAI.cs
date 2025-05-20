@@ -7,6 +7,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] float moveSpeed = 1.5f;
+    [SerializeField] float chaseRange = 2f;
     [SerializeField] float attackRange = 0.8f;
     [SerializeField] float attackCooldown = 1f;
     [SerializeField] int damage = 1;
@@ -32,7 +33,6 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         if (isDead) return;
-        Debug.Log("Enemy Update is running");
 
         // ✅ Check if player is dead and go back to patrolling
         if (player.GetComponent<Hero>().isDead)
@@ -46,12 +46,10 @@ public class EnemyAI : MonoBehaviour
         if (CanSeePlayer())
         {
             ChaseAndAttack(distanceToPlayer);
-            Debug.Log("I can see the player!");
         }
         else
         {
             Patrol();
-            Debug.Log("I CANNOT see the player.");
         }
     }
 
@@ -132,28 +130,15 @@ public class EnemyAI : MonoBehaviour
     }
 
     bool CanSeePlayer()
-{
-    if (player == null) return false;
-
-    Vector2 dirToPlayer = player.position - transform.position;
-    RaycastHit2D hit = Physics2D.Raycast(transform.position, dirToPlayer.normalized, Mathf.Infinity, obstacleMask);
-
-    if (hit.collider == null)
     {
-        Debug.Log("✅ Clear line of sight — no hit at all");
-        return true; // nothing blocked the view
-    }
+        if (player == null) return false;
 
-    if (hit.collider.transform == player)
-    {
-        Debug.Log("👁 Player in sight!");
+        Vector2 dirToPlayer = player.position - transform.position;
+        float distance = dirToPlayer.magnitude;
+
+        if (distance > chaseRange) return false;
+
         return true;
     }
-    else
-    {
-        Debug.Log($"❌ Blocked by: {hit.collider.name}");
-        return false;
-    }
-}
 
 }
