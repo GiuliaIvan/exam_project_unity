@@ -20,7 +20,7 @@ MonoBehaviour:
     were often sung or performed aloud so everyone could understand.\r\n- This scroll
     includes one of the first bans on trial by combat.\r\n- The ink was made from
     oak gall and iron salts \u2014 almost immortal."
-  artifactSprite: {fileID: 4859708892074471264, guid: a9bdbbd50b910de4199ef9d03394fbf8, type: 3}
+  artifactSprite: {fileID: -2384028991159169613, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonActiveSprite: {fileID: -2384028991159169613, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: 5561859063357725646, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   collected: 0
