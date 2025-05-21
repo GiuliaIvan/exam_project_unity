@@ -32,26 +32,35 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (isDead) return;
+        Debug.Log("Enemy Update is running");
 
-        // ✅ Check if player is dead and go back to patrolling
+        if (player == null)
+        {
+            Debug.LogWarning("🚨 Player reference missing!");
+            return;
+        }
+
         if (player.GetComponent<Hero>().isDead)
         {
+            Debug.Log("💤 Player is dead, returning to patrol");
             Patrol();
-            return; // Prevent further logic
+            return;
         }
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         if (CanSeePlayer())
         {
+            Debug.Log("✅ Can see player, chase & attack");
             ChaseAndAttack(distanceToPlayer);
         }
         else
         {
+            Debug.Log("❌ Cannot see player, patrol instead");
             Patrol();
         }
     }
+
 
     void FixedUpdate() => rb.MovePosition(rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime);
 
@@ -133,12 +142,39 @@ public class EnemyAI : MonoBehaviour
     {
         if (player == null) return false;
 
-        Vector2 dirToPlayer = player.position - transform.position;
-        float distance = dirToPlayer.magnitude;
+        Vector2 origin = transform.position;
+        Vector2 target = player.position;
+        Vector2 direction = target - origin;
+        float distance = direction.magnitude;
 
-        if (distance > chaseRange) return false;
+        RaycastHit2D hit = Physics2D.Raycast(origin, direction.normalized, distance, ~obstacleMask);
 
-        return true;
+        if (hit.collider != null)
+        {
+            Debug.DrawLine(origin, hit.point, Color.red);
+            if (hit.collider.transform == player)
+            {
+                Debug.Log("👀 Enemy sees player");
+                return true;
+            }
+            else
+            {
+                Debug.Log("🚧 Enemy vision blocked by: " + hit.collider.name);
+            }
+        }
+        else
+        {
+            Debug.Log("❓ Nothing hit by raycast");
+        }
+
+        return false;
     }
 
+    void OnDrawGizmos()
+    {
+        if (player == null) return;
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, player.position);
+    }
 }
