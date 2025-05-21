@@ -26,7 +26,7 @@ public class Hero : MonoBehaviour
     public float rotationSpeed = 5f;
 
 
-    private bool isHiding = false;
+    public  bool isHiding = false;
     public float hideRange = 1f;
 
 

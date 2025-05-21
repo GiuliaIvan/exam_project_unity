@@ -139,41 +139,48 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    bool CanSeePlayer()
+bool CanSeePlayer()
+{
+    if (player.GetComponent<Hero>().isHiding)
     {
-        Vector2 origin = transform.position;
-        Vector2 direction = (player.position - transform.position).normalized;
-        float distance = Vector2.Distance(transform.position, player.position);
-
-        if (distance > chaseRange)
-        {
-            Debug.DrawLine(origin, player.position, Color.gray);
-            Debug.Log("👁️ Player too far to be seen.");
-            return false;
-        }
-
-        // 1️⃣ Check if any obstacle blocks the view
-        RaycastHit2D hit = Physics2D.Raycast(origin, direction, distance, obstacleMask);
-        if (hit.collider != null)
-        {
-            Debug.DrawLine(origin, hit.point, Color.red);
-            Debug.Log("🚧 Vision blocked by: " + hit.collider.name);
-            return false;
-        }
-
-        // 2️⃣ Check if player is in line of sight
-        RaycastHit2D playerHit = Physics2D.Raycast(origin, direction, distance, playerMask);
-        if (playerHit.collider != null && playerHit.collider.transform == player)
-        {
-            Debug.DrawLine(origin, player.position, Color.green);
-            Debug.Log("👀 Enemy sees player within range");
-            return true;
-        }
-
-        Debug.DrawLine(origin, player.position, Color.gray);
-        Debug.Log("❓ Nothing hit by raycast");
+        Debug.Log("🙈 Player is hiding, cannot be seen.");
         return false;
     }
+
+    Vector2 origin = transform.position;
+    Vector2 direction = (player.position - transform.position).normalized;
+    float distance = Vector2.Distance(transform.position, player.position);
+
+    if (distance > chaseRange)
+    {
+        Debug.DrawLine(origin, player.position, Color.gray);
+        Debug.Log("👁️ Player too far to be seen.");
+        return false;
+    }
+
+    // 1️⃣ Check if any obstacle blocks the view
+    RaycastHit2D hit = Physics2D.Raycast(origin, direction, distance, obstacleMask);
+    if (hit.collider != null)
+    {
+        Debug.DrawLine(origin, hit.point, Color.red);
+        Debug.Log("🚧 Vision blocked by: " + hit.collider.name);
+        return false;
+    }
+
+    // 2️⃣ Check if player is in line of sight
+    RaycastHit2D playerHit = Physics2D.Raycast(origin, direction, distance, playerMask);
+    if (playerHit.collider != null && playerHit.collider.transform == player)
+    {
+        Debug.DrawLine(origin, player.position, Color.green);
+        Debug.Log("👀 Enemy sees player within range");
+        return true;
+    }
+
+    Debug.DrawLine(origin, player.position, Color.gray);
+    Debug.Log("❓ Nothing hit by raycast");
+    return false;
+}
+
 
     void OnDrawGizmos()
     {
