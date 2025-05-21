@@ -179,7 +179,10 @@ MonoBehaviour:
   maxLives: 3
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1280
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!95 &-463180704775408820
 Animator:
   serializedVersion: 7
