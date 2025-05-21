@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4285372090785369355}
   - component: {fileID: 6828083981673244689}
   - component: {fileID: -463180704775408820}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Skeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -177,6 +177,9 @@ MonoBehaviour:
   damage: 1
   waitTime: 1.5
   maxLives: 3
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!95 &-463180704775408820
 Animator:
   serializedVersion: 7

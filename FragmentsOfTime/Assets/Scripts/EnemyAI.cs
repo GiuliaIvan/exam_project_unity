@@ -15,6 +15,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] int maxLives = 3;
 
     [SerializeField] LayerMask obstacleMask;
+    [SerializeField] private LayerMask playerMask;
 
     Rigidbody2D rb;
     Vector2 moveDirection;
@@ -140,33 +141,37 @@ public class EnemyAI : MonoBehaviour
 
     bool CanSeePlayer()
     {
-        if (player == null) return false;
-
         Vector2 origin = transform.position;
-        Vector2 target = player.position;
-        Vector2 direction = target - origin;
-        float distance = direction.magnitude;
+        Vector2 direction = (player.position - transform.position).normalized;
+        float distance = Vector2.Distance(transform.position, player.position);
 
-        RaycastHit2D hit = Physics2D.Raycast(origin, direction.normalized, distance, ~obstacleMask);
+        if (distance > chaseRange)
+        {
+            Debug.DrawLine(origin, player.position, Color.gray);
+            Debug.Log("👁️ Player too far to be seen.");
+            return false;
+        }
 
+        // 1️⃣ Check if any obstacle blocks the view
+        RaycastHit2D hit = Physics2D.Raycast(origin, direction, distance, obstacleMask);
         if (hit.collider != null)
         {
             Debug.DrawLine(origin, hit.point, Color.red);
-            if (hit.collider.transform == player)
-            {
-                Debug.Log("👀 Enemy sees player");
-                return true;
-            }
-            else
-            {
-                Debug.Log("🚧 Enemy vision blocked by: " + hit.collider.name);
-            }
-        }
-        else
-        {
-            Debug.Log("❓ Nothing hit by raycast");
+            Debug.Log("🚧 Vision blocked by: " + hit.collider.name);
+            return false;
         }
 
+        // 2️⃣ Check if player is in line of sight
+        RaycastHit2D playerHit = Physics2D.Raycast(origin, direction, distance, playerMask);
+        if (playerHit.collider != null && playerHit.collider.transform == player)
+        {
+            Debug.DrawLine(origin, player.position, Color.green);
+            Debug.Log("👀 Enemy sees player within range");
+            return true;
+        }
+
+        Debug.DrawLine(origin, player.position, Color.gray);
+        Debug.Log("❓ Nothing hit by raycast");
         return false;
     }
 
@@ -174,7 +179,10 @@ public class EnemyAI : MonoBehaviour
     {
         if (player == null) return;
 
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, player.position);
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }

@@ -18,13 +18,13 @@ TagManager:
   - 
   - Water
   - UI
+  - 
+  - 
   - Walls
   - ShadowCasterLayer
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Obstacles
+  - Enemy
+  - Player
   - 
   - 
   - 
