@@ -18,6 +18,7 @@ public class FinishLine : MonoBehaviour
     {
         if (playerInTrigger && Input.GetKeyDown(KeyCode.C))
         {
+            GameManager.Instance.LevelComplete();
             SceneManager.LoadScene("Camp");
         }
     }
