@@ -9,6 +9,8 @@ TagManager:
   - Wall
   - Item
   - Decor
+  - Decor
+  - Barrel
   layers:
   - Default
   - TransparentFX
@@ -16,13 +18,13 @@ TagManager:
   - 
   - Water
   - UI
+  - 
+  - 
   - Walls
   - ShadowCasterLayer
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Obstacles
+  - Enemy
+  - Player
   - 
   - 
   - 
