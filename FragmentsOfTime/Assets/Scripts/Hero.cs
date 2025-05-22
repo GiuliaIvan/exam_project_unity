@@ -269,7 +269,7 @@ public class Hero : MonoBehaviour
                 moveDirection = Vector2.zero;
                 rb.linearVelocity = Vector2.zero;
 
-                sr.sortingOrder = 1; // Appear behind barrel
+                sr.sortingOrder = 0; // Appear behind barrel
                 playerLight.SetActive(false); // Turn the light off while hiding
                 Debug.Log("🫣 Player is now hiding behind the barrel.");
                 return;
