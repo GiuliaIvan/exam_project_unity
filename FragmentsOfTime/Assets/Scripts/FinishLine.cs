@@ -1,16 +1,18 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
-    public GameObject goToCampSign; // Assign this in the inspector
+    public GameObject goToCampSign;
     private bool playerInTrigger = false;
+    public AudioClip clickSound;
 
     void Start()
     {
         if (goToCampSign != null)
         {
-            goToCampSign.SetActive(false); // Hide at start
+            goToCampSign.SetActive(false);
         }
     }
 
@@ -18,9 +20,16 @@ public class FinishLine : MonoBehaviour
     {
         if (playerInTrigger && Input.GetKeyDown(KeyCode.C))
         {
-            GameManager.Instance.LevelComplete();
-            SceneManager.LoadScene("Camp");
+            StartCoroutine(PlaySoundAndLoadScene());
         }
+    }
+
+    private IEnumerator PlaySoundAndLoadScene()
+    {
+        AudioSource.PlayClipAtPoint(clickSound, transform.position);
+        yield return new WaitForSeconds(clickSound.length); // Wait for sound to finish
+        GameManager.Instance.LevelComplete();
+        SceneManager.LoadScene("Camp");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
