@@ -27,8 +27,6 @@ public class ArtifactInfoPanel : MonoBehaviour
         artifactImage.sprite = data.icon;
 
         gameObject.SetActive(true);
-        
-        throw new NotImplementedException();
     }
 
 
