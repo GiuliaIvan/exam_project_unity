@@ -25,10 +25,20 @@ public class EnemyAI : MonoBehaviour
     int currentLives;
     bool isDead;
 
+    [Header("Audio")]
+    AudioSource audioSource;
+    public AudioClip damageSound;
+    public AudioClip deadSound;
+    public AudioClip walkingSound;
+    [SerializeField] float hearingRange = 5f;
+
+
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         currentLives = maxLives;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -110,9 +120,20 @@ public class EnemyAI : MonoBehaviour
         if (isDead) return;
 
         currentLives = Mathf.Max(0, currentLives - damage);
+        
+        if (damageSound != null)
+            AudioSource.PlayClipAtPoint(damageSound, transform.position);
+
         FlashRed();
 
-        if (currentLives <= 0) Die();
+        if (currentLives <= 0)
+        {
+            if (deadSound != null)
+                AudioSource.PlayClipAtPoint(deadSound, transform.position);
+
+            Die();
+        }    
+            
     }
 
     void FlashRed()
@@ -132,12 +153,27 @@ public class EnemyAI : MonoBehaviour
     void MoveTo(Vector2 dir)
     {
         moveDirection = dir;
-        // if (dir.x != 0) spriteRenderer.flipX = dir.x < 0;
-        if (Mathf.Abs(dir.x) > 0.05f)  // Avoid flipping rapidly when nearly still
+
+        if (Mathf.Abs(dir.x) > 0.05f)
         {
             spriteRenderer.flipX = dir.x < 0;
         }
+
+        bool isMoving = dir.magnitude > 0.1f;
+        bool playerCloseEnough = Vector2.Distance(transform.position, player.position) <= hearingRange;
+
+        if (isMoving && playerCloseEnough && !audioSource.isPlaying)
+        {
+            audioSource.clip = walkingSound;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+        else if ((!isMoving || !playerCloseEnough) && audioSource.isPlaying && audioSource.clip == walkingSound)
+        {
+            audioSource.Stop();
+        }
     }
+
 
 bool CanSeePlayer()
 {
