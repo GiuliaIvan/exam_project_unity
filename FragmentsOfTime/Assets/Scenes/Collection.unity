@@ -1721,7 +1721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectionManager: {fileID: 1181007222}
-  artifactToCollect: {fileID: 0}
+  artifactToCollect: {fileID: 11400000, guid: 1ba987bd2f9347e458f15c0739621ed8, type: 2}
 --- !u!114 &1746894364 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4027893174988395991, guid: 633dabe5c87413546ab88312d8fb9140, type: 3}
@@ -3209,6 +3209,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 133.0217
       objectReference: {fileID: 0}
+    - target: {fileID: 6551528176253702830, guid: a241e145b88b6a94f874126d9083325f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7231879944943531791, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 403.3506
@@ -3267,15 +3271,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8271396402356502000, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8271396402356502000, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8271396402356502000, guid: a241e145b88b6a94f874126d9083325f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 913104660}
+    - target: {fileID: 8271396402356502000, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271396402356502000, guid: a241e145b88b6a94f874126d9083325f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayClickSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271396402356502000, guid: a241e145b88b6a94f874126d9083325f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIButtonSound, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271396402356502000, guid: a241e145b88b6a94f874126d9083325f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8896488371922214840, guid: a241e145b88b6a94f874126d9083325f, type: 3}
       propertyPath: m_SizeDelta.x
