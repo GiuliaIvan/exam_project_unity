@@ -4,12 +4,21 @@ public class PickupItem : MonoBehaviour
 {
     public ItemData itemData;
     public float pickupRadius = 1f;
-    public bool autoPickup = false; // Set to true if you want items to auto-pickup on touch
-    
+    public GameObject tagLetter;
+    private bool playerInTrigger = false;
+
+    void Start()
+    {
+        if (tagLetter != null)
+        {
+            tagLetter.SetActive(false);
+        }
+    }
+
     private void Update()
     {
         // Manual pickup with F key
-        if (Input.GetKeyDown(KeyCode.F))
+        if (playerInTrigger && Input.GetKeyDown(KeyCode.F))
         {
             TryManualPickup();
         }
@@ -17,10 +26,25 @@ public class PickupItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Auto pickup on touch (if enabled)
-        if (autoPickup && other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            Pickup();
+            playerInTrigger = true;
+            if (tagLetter != null)
+            {
+                tagLetter.SetActive(true);
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInTrigger = false;
+            if (tagLetter != null)
+            {
+                tagLetter.SetActive(false);
+            }
         }
     }
 
