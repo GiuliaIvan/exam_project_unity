@@ -15,6 +15,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] int maxLives = 3;
 
     [SerializeField] LayerMask obstacleMask;
+    [SerializeField] private LayerMask playerMask;
 
     Rigidbody2D rb;
     Vector2 moveDirection;
@@ -32,26 +33,35 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (isDead) return;
+        Debug.Log("Enemy Update is running");
 
-        // ✅ Check if player is dead and go back to patrolling
+        if (player == null)
+        {
+            Debug.LogWarning("🚨 Player reference missing!");
+            return;
+        }
+
         if (player.GetComponent<Hero>().isDead)
         {
+            Debug.Log("💤 Player is dead, returning to patrol");
             Patrol();
-            return; // Prevent further logic
+            return;
         }
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         if (CanSeePlayer())
         {
+            Debug.Log("✅ Can see player, chase & attack");
             ChaseAndAttack(distanceToPlayer);
         }
         else
         {
+            Debug.Log("❌ Cannot see player, patrol instead");
             Patrol();
         }
     }
+
 
     void FixedUpdate() => rb.MovePosition(rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime);
 
@@ -129,16 +139,57 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    bool CanSeePlayer()
+bool CanSeePlayer()
+{
+    if (player.GetComponent<Hero>().isHiding)
     {
-        if (player == null) return false;
+        Debug.Log("🙈 Player is hiding, cannot be seen.");
+        return false;
+    }
 
-        Vector2 dirToPlayer = player.position - transform.position;
-        float distance = dirToPlayer.magnitude;
+    Vector2 origin = transform.position;
+    Vector2 direction = (player.position - transform.position).normalized;
+    float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance > chaseRange) return false;
+    if (distance > chaseRange)
+    {
+        Debug.DrawLine(origin, player.position, Color.gray);
+        Debug.Log("👁️ Player too far to be seen.");
+        return false;
+    }
 
+    // 1️⃣ Check if any obstacle blocks the view
+    RaycastHit2D hit = Physics2D.Raycast(origin, direction, distance, obstacleMask);
+    if (hit.collider != null)
+    {
+        Debug.DrawLine(origin, hit.point, Color.red);
+        Debug.Log("🚧 Vision blocked by: " + hit.collider.name);
+        return false;
+    }
+
+    // 2️⃣ Check if player is in line of sight
+    RaycastHit2D playerHit = Physics2D.Raycast(origin, direction, distance, playerMask);
+    if (playerHit.collider != null && playerHit.collider.transform == player)
+    {
+        Debug.DrawLine(origin, player.position, Color.green);
+        Debug.Log("👀 Enemy sees player within range");
         return true;
     }
 
+    Debug.DrawLine(origin, player.position, Color.gray);
+    Debug.Log("❓ Nothing hit by raycast");
+    return false;
+}
+
+
+    void OnDrawGizmos()
+    {
+        if (player == null) return;
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
 }
