@@ -22,18 +22,20 @@ public class Hero : MonoBehaviour
     private bool canShoot = true;
     private bool isShooting = false;
     public GameObject arrowPrefab;
+
+    [Header("Light")]
     public GameObject playerLight;
     public float rotationSpeed = 5f;
+
+    [Header("Hiding")]
+    public bool isHiding = false;
+    public float hideRange = 1f;
 
     [Header("Audio")]
     public AudioClip inventorySound;
     public AudioClip damageSound;
     public AudioClip deadSound;
     public AudioClip bowSound;
-
-
-    public  bool isHiding = false;
-    public float hideRange = 1f;
 
 
     void Start()
@@ -95,7 +97,7 @@ public class Hero : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X))
         {
             InventorySystem.Instance.DropSelectedItem(transform.position);
-            
+
             if (inventorySound != null)
                 AudioSource.PlayClipAtPoint(inventorySound, transform.position);
         }
@@ -123,7 +125,7 @@ public class Hero : MonoBehaviour
                 break;
             }
         }
-        
+
     }
 
     void Move()
@@ -187,7 +189,7 @@ public class Hero : MonoBehaviour
         animator.SetTrigger("Shoot");
 
         rb.linearVelocity = Vector2.zero;
-        
+
         if (bowSound != null)
             AudioSource.PlayClipAtPoint(bowSound, transform.position);
 
@@ -276,6 +278,4 @@ public class Hero : MonoBehaviour
 
         Debug.Log("❌ No barrel nearby to hide behind.");
     }
-
-
 }
