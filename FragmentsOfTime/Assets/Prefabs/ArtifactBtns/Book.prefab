@@ -145,5 +145,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13196e2ba7b00f345be919dadc6916ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  artifactData: {fileID: 11400000, guid: cb4bb655b1497be4ba463757c9fa3219, type: 2}
+  itemData: {fileID: 11400000, guid: 1ba987bd2f9347e458f15c0739621ed8, type: 2}
   infoPanel: {fileID: 0}
