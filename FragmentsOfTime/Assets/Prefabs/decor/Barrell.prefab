@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 6226913720484300862}
   - component: {fileID: 5361478219067740813}
   - component: {fileID: -6225889371101323070}
+  - component: {fileID: -224691729212654673}
   m_Layer: 0
   m_Name: Barrell
   m_TagString: Decor
@@ -308,6 +309,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.011865437, y: 0.008708954}
   m_Radius: 0.94894177
+--- !u!114 &-224691729212654673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4858553584483299912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 626c3b3438ed5384cacbe2770b993dfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagLetter: {fileID: 5959343987793983500}
 --- !u!1 &5959343987793983500
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.95}
+  m_AnchoredPosition: {x: 0.05, y: 0.9}
   m_SizeDelta: {x: 39.8866, y: 30.3577}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8259024806178813066
