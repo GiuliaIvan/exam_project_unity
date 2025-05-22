@@ -25,6 +25,14 @@ public class Hero : MonoBehaviour
     public GameObject playerLight;
     public float rotationSpeed = 5f;
 
+    [Header("Audio")]
+    public AudioClip inventorySound;
+    public AudioClip damageSound;
+    public AudioClip deadSound;
+    public AudioClip bowSound;
+
+
+
     void Start()
     {
         GameManager.Instance.StartGame(this);
@@ -74,10 +82,16 @@ public class Hero : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X))
         {
             InventorySystem.Instance.DropSelectedItem(transform.position);
+            
+            if (inventorySound != null)
+                AudioSource.PlayClipAtPoint(inventorySound, transform.position);
         }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
+            if (inventorySound != null)
+                AudioSource.PlayClipAtPoint(inventorySound, transform.position);
+
             TryPickupItem();
         }
 
@@ -92,9 +106,11 @@ public class Hero : MonoBehaviour
             if (pickup != null)
             {
                 pickup.Pickup();
+
                 break;
             }
         }
+        
     }
 
     void Move()
@@ -117,11 +133,17 @@ public class Hero : MonoBehaviour
 
         LifeManager.Instance.UpdateLives(currentLives);
 
+        if (damageSound != null)
+            AudioSource.PlayClipAtPoint(damageSound, transform.position);
+
         GetComponent<SpriteRenderer>().color = Color.red;
         Invoke("ResetColor", 0.2f);
 
         if (currentLives <= 0)
         {
+            if (deadSound != null)
+                AudioSource.PlayClipAtPoint(deadSound, transform.position);
+
             Die();
         }
     }
@@ -152,6 +174,9 @@ public class Hero : MonoBehaviour
         animator.SetTrigger("Shoot");
 
         rb.linearVelocity = Vector2.zero;
+        
+        if (bowSound != null)
+            AudioSource.PlayClipAtPoint(bowSound, transform.position);
 
         GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
         arrow.GetComponent<Arrow>().SetDirection(lastMoveDirection);
