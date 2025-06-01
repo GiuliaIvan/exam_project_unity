@@ -24,4 +24,5 @@ MonoBehaviour:
     early medieval knockoffs!"
   buttonActiveSprite: {fileID: 8380155532249205988, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: 4240456573560317840, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  itemWeight: 3
   collected: 0

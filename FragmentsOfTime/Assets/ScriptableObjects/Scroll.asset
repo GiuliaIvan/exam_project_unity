@@ -24,4 +24,5 @@ MonoBehaviour:
     oak gall and iron salts \u2014 almost immortal."
   buttonActiveSprite: {fileID: -2384028991159169613, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: 5561859063357725646, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  itemWeight: 0.4
   collected: 0

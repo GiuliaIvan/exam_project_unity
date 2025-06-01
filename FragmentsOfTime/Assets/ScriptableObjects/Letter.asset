@@ -24,4 +24,5 @@ MonoBehaviour:
     this letter was never sent."
   buttonActiveSprite: {fileID: -494585980809069213, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: -943484887433125569, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  itemWeight: 0.1
   collected: 0

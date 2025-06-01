@@ -37,6 +37,11 @@ public class Hero : MonoBehaviour
     public AudioClip deadSound;
     public AudioClip bowSound;
 
+    [Header("Encumbrance")]
+    public float baseMoveSpeed = 5f;
+    public float weightPenaltyPerUnit = 0.1f;
+    public float speedNow;
+
 
     void Start()
     {
@@ -136,7 +141,10 @@ public class Hero : MonoBehaviour
             return;
         }
 
-        rb.linearVelocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        float weight = InventorySystem.Instance.GetTotalWeight();
+        float adjustedSpeed= speedNow = Mathf.Max(baseMoveSpeed - weight * weightPenaltyPerUnit, 1f);
+        rb.linearVelocity = new Vector2(moveDirection.x * adjustedSpeed, moveDirection.y * adjustedSpeed);
+
     }
 
     public void TakeDamage(int damage)

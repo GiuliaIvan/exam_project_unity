@@ -24,4 +24,5 @@ MonoBehaviour:
     crown himself."
   buttonActiveSprite: {fileID: -7060268825053000722, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: -8710130782684579753, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  itemWeight: 2
   collected: 0

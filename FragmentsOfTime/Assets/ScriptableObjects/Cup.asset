@@ -24,4 +24,5 @@ MonoBehaviour:
     Some say it\u2019s not a cup at all \u2014 but a metaphor for truth."
   buttonActiveSprite: {fileID: -4783672639765816820, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: -1674217619445951896, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  itemWeight: 0.6
   collected: 0

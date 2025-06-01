@@ -89,7 +89,7 @@ public class InventorySystem : MonoBehaviour
     {
         return slots[selectedSlot];
     }
-    
+
     public void OnLevelCompleted(bool playerSurvived)
     {
         if (playerSurvived)
@@ -111,5 +111,18 @@ public class InventorySystem : MonoBehaviour
         // Clear collected list either way
         collectedArtifactsThisRun.Clear();
     }
+    
+    public float GetTotalWeight()
+    {
+        float weight = 0f;
+        foreach (var item in slots)
+        {
+            if (item != null)
+                weight += item.itemWeight;
+        }
+        return weight;
+    }
+
+
 
 }

@@ -24,4 +24,5 @@ MonoBehaviour:
     was even heavier \u2014 built just for sport!"
   buttonActiveSprite: {fileID: 7555699168041150024, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: -2680875485028978633, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  itemWeight: 3.5
   collected: 0

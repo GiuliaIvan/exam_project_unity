@@ -24,4 +24,5 @@ MonoBehaviour:
     under moonlight."
   buttonActiveSprite: {fileID: -7884175704925340126, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
   buttonInactiveSprite: {fileID: 1017815312762466918, guid: fee7252e51d2aa047b4a810e11cce635, type: 3}
+  itemWeight: 1.8
   collected: 0
