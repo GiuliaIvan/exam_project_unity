@@ -37,7 +37,7 @@ public class Hero : MonoBehaviour
     public AudioClip deadSound;
     public AudioClip bowSound;
 
-    [Header("Encumbrance")]
+    [Header("Slowdown")]
     public float baseMoveSpeed = 5f;
     public float weightPenaltyPerUnit = 0.1f;
     public float speedNow;
